@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C491C4FC284A7422002B6718 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C491C4FB284A7422002B6718 /* AppDelegate.swift */; };
+		C491C4FE284A7422002B6718 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C491C4FD284A7422002B6718 /* SceneDelegate.swift */; };
+		C491C500284A7422002B6718 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C491C4FF284A7422002B6718 /* ViewController.swift */; };
+		C491C503284A7422002B6718 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C491C501284A7422002B6718 /* Main.storyboard */; };
+		C491C505284A7425002B6718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C491C504284A7425002B6718 /* Assets.xcassets */; };
+		C491C508284A7425002B6718 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C491C506284A7425002B6718 /* LaunchScreen.storyboard */; };
+		C491C513284A7426002B6718 /* Hinger_for_jobsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C491C512284A7426002B6718 /* Hinger_for_jobsTests.swift */; };
+		C491C51D284A7426002B6718 /* Hinger_for_jobsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C491C51C284A7426002B6718 /* Hinger_for_jobsUITests.swift */; };
+		C491C51F284A7426002B6718 /* Hinger_for_jobsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C491C51E284A7426002B6718 /* Hinger_for_jobsUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C491C50F284A7426002B6718 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C491C4F0284A7422002B6718 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C491C4F7284A7422002B6718;
+			remoteInfo = "Hinger for jobs";
+		};
+		C491C519284A7426002B6718 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C491C4F0284A7422002B6718 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C491C4F7284A7422002B6718;
+			remoteInfo = "Hinger for jobs";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C491C4F8284A7422002B6718 /* Hinger for jobs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hinger for jobs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C491C4FB284A7422002B6718 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C491C4FD284A7422002B6718 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C491C4FF284A7422002B6718 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C491C502284A7422002B6718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C491C504284A7425002B6718 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C491C507284A7425002B6718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C491C509284A7425002B6718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C491C50E284A7426002B6718 /* Hinger for jobsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hinger for jobsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C491C512284A7426002B6718 /* Hinger_for_jobsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hinger_for_jobsTests.swift; sourceTree = "<group>"; };
+		C491C518284A7426002B6718 /* Hinger for jobsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hinger for jobsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C491C51C284A7426002B6718 /* Hinger_for_jobsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hinger_for_jobsUITests.swift; sourceTree = "<group>"; };
+		C491C51E284A7426002B6718 /* Hinger_for_jobsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hinger_for_jobsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C491C4F5284A7422002B6718 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C491C50B284A7426002B6718 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C491C515284A7426002B6718 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C491C4EF284A7422002B6718 = {
+			isa = PBXGroup;
+			children = (
+				C491C4FA284A7422002B6718 /* Hinger for jobs */,
+				C491C511284A7426002B6718 /* Hinger for jobsTests */,
+				C491C51B284A7426002B6718 /* Hinger for jobsUITests */,
+				C491C4F9284A7422002B6718 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C491C4F9284A7422002B6718 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C491C4F8284A7422002B6718 /* Hinger for jobs.app */,
+				C491C50E284A7426002B6718 /* Hinger for jobsTests.xctest */,
+				C491C518284A7426002B6718 /* Hinger for jobsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C491C4FA284A7422002B6718 /* Hinger for jobs */ = {
+			isa = PBXGroup;
+			children = (
+				C491C4FB284A7422002B6718 /* AppDelegate.swift */,
+				C491C4FD284A7422002B6718 /* SceneDelegate.swift */,
+				C491C4FF284A7422002B6718 /* ViewController.swift */,
+				C491C501284A7422002B6718 /* Main.storyboard */,
+				C491C504284A7425002B6718 /* Assets.xcassets */,
+				C491C506284A7425002B6718 /* LaunchScreen.storyboard */,
+				C491C509284A7425002B6718 /* Info.plist */,
+			);
+			path = "Hinger for jobs";
+			sourceTree = "<group>";
+		};
+		C491C511284A7426002B6718 /* Hinger for jobsTests */ = {
+			isa = PBXGroup;
+			children = (
+				C491C512284A7426002B6718 /* Hinger_for_jobsTests.swift */,
+			);
+			path = "Hinger for jobsTests";
+			sourceTree = "<group>";
+		};
+		C491C51B284A7426002B6718 /* Hinger for jobsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C491C51C284A7426002B6718 /* Hinger_for_jobsUITests.swift */,
+				C491C51E284A7426002B6718 /* Hinger_for_jobsUITestsLaunchTests.swift */,
+			);
+			path = "Hinger for jobsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C491C4F7284A7422002B6718 /* Hinger for jobs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C491C522284A7426002B6718 /* Build configuration list for PBXNativeTarget "Hinger for jobs" */;
+			buildPhases = (
+				C491C4F4284A7422002B6718 /* Sources */,
+				C491C4F5284A7422002B6718 /* Frameworks */,
+				C491C4F6284A7422002B6718 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hinger for jobs";
+			productName = "Hinger for jobs";
+			productReference = C491C4F8284A7422002B6718 /* Hinger for jobs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C491C50D284A7426002B6718 /* Hinger for jobsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C491C525284A7426002B6718 /* Build configuration list for PBXNativeTarget "Hinger for jobsTests" */;
+			buildPhases = (
+				C491C50A284A7426002B6718 /* Sources */,
+				C491C50B284A7426002B6718 /* Frameworks */,
+				C491C50C284A7426002B6718 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C491C510284A7426002B6718 /* PBXTargetDependency */,
+			);
+			name = "Hinger for jobsTests";
+			productName = "Hinger for jobsTests";
+			productReference = C491C50E284A7426002B6718 /* Hinger for jobsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C491C517284A7426002B6718 /* Hinger for jobsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C491C528284A7426002B6718 /* Build configuration list for PBXNativeTarget "Hinger for jobsUITests" */;
+			buildPhases = (
+				C491C514284A7426002B6718 /* Sources */,
+				C491C515284A7426002B6718 /* Frameworks */,
+				C491C516284A7426002B6718 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C491C51A284A7426002B6718 /* PBXTargetDependency */,
+			);
+			name = "Hinger for jobsUITests";
+			productName = "Hinger for jobsUITests";
+			productReference = C491C518284A7426002B6718 /* Hinger for jobsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C491C4F0284A7422002B6718 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					C491C4F7284A7422002B6718 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					C491C50D284A7426002B6718 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = C491C4F7284A7422002B6718;
+					};
+					C491C517284A7426002B6718 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = C491C4F7284A7422002B6718;
+					};
+				};
+			};
+			buildConfigurationList = C491C4F3284A7422002B6718 /* Build configuration list for PBXProject "Hinger for jobs" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C491C4EF284A7422002B6718;
+			productRefGroup = C491C4F9284A7422002B6718 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C491C4F7284A7422002B6718 /* Hinger for jobs */,
+				C491C50D284A7426002B6718 /* Hinger for jobsTests */,
+				C491C517284A7426002B6718 /* Hinger for jobsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C491C4F6284A7422002B6718 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C491C508284A7425002B6718 /* LaunchScreen.storyboard in Resources */,
+				C491C505284A7425002B6718 /* Assets.xcassets in Resources */,
+				C491C503284A7422002B6718 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C491C50C284A7426002B6718 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C491C516284A7426002B6718 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C491C4F4284A7422002B6718 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C491C500284A7422002B6718 /* ViewController.swift in Sources */,
+				C491C4FC284A7422002B6718 /* AppDelegate.swift in Sources */,
+				C491C4FE284A7422002B6718 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C491C50A284A7426002B6718 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C491C513284A7426002B6718 /* Hinger_for_jobsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C491C514284A7426002B6718 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C491C51D284A7426002B6718 /* Hinger_for_jobsUITests.swift in Sources */,
+				C491C51F284A7426002B6718 /* Hinger_for_jobsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C491C510284A7426002B6718 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C491C4F7284A7422002B6718 /* Hinger for jobs */;
+			targetProxy = C491C50F284A7426002B6718 /* PBXContainerItemProxy */;
+		};
+		C491C51A284A7426002B6718 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C491C4F7284A7422002B6718 /* Hinger for jobs */;
+			targetProxy = C491C519284A7426002B6718 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C491C501284A7422002B6718 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C491C502284A7422002B6718 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C491C506284A7425002B6718 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C491C507284A7425002B6718 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C491C520284A7426002B6718 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C491C521284A7426002B6718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C491C523284A7426002B6718 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Hinger for jobs/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "onewho.Hinger-for-jobs";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C491C524284A7426002B6718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Hinger for jobs/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "onewho.Hinger-for-jobs";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C491C526284A7426002B6718 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "onewho.Hinger-for-jobsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hinger for jobs.app/Hinger for jobs";
+			};
+			name = Debug;
+		};
+		C491C527284A7426002B6718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "onewho.Hinger-for-jobsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hinger for jobs.app/Hinger for jobs";
+			};
+			name = Release;
+		};
+		C491C529284A7426002B6718 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "onewho.Hinger-for-jobsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Hinger for jobs";
+			};
+			name = Debug;
+		};
+		C491C52A284A7426002B6718 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "onewho.Hinger-for-jobsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Hinger for jobs";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C491C4F3284A7422002B6718 /* Build configuration list for PBXProject "Hinger for jobs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C491C520284A7426002B6718 /* Debug */,
+				C491C521284A7426002B6718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C491C522284A7426002B6718 /* Build configuration list for PBXNativeTarget "Hinger for jobs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C491C523284A7426002B6718 /* Debug */,
+				C491C524284A7426002B6718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C491C525284A7426002B6718 /* Build configuration list for PBXNativeTarget "Hinger for jobsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C491C526284A7426002B6718 /* Debug */,
+				C491C527284A7426002B6718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C491C528284A7426002B6718 /* Build configuration list for PBXNativeTarget "Hinger for jobsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C491C529284A7426002B6718 /* Debug */,
+				C491C52A284A7426002B6718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C491C4F0284A7422002B6718 /* Project object */;
+}
