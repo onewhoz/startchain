@@ -1,0 +1,6 @@
+framework module Pods_Hinger_for_jobs_Hinger_for_jobsUITests {
+  umbrella header "Pods-Hinger for jobs-Hinger for jobsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

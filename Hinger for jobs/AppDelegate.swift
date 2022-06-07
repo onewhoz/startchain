@@ -6,16 +6,36 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseFirestore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var hasAlreadyLaunched :Bool!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
+        
+        
+        
+        hasAlreadyLaunched = UserDefaults.standard.bool(forKey: "hasAlreadyLaunched")
+               
+               //check first launched
+               if (hasAlreadyLaunched)
+               {
+                  hasAlreadyLaunched = true
+               }else{
+                   UserDefaults.standard.set(true, forKey: "hasAlreadyLaunched")
+               }
+        
         return true
     }
+    
+    func sethasAlreadyLaunched(){
+           hasAlreadyLaunched = true
+       }
 
     // MARK: UISceneSession Lifecycle
 

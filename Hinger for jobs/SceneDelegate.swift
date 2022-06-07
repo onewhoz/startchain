@@ -4,7 +4,7 @@
 //
 //  Created by Max Dovhopolyi on 6/3/22.
 //
-
+import FirebaseAuth
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -13,10 +13,59 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        let window = UIWindow(windowScene: windowScene)
+        Coordinator.window = window
+        let mainStoryboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        if(!appDelegate.hasAlreadyLaunched){
+            // App is opened for the first time
+            appDelegate.sethasAlreadyLaunched()
+            
+            let Onboarding : OnboardingViewController = mainStoryboard.instantiateViewController(withIdentifier: "OnboardingVC") as! OnboardingViewController
+            window.rootViewController = Onboarding
+            
+            
+        }
+        else{
+                    if Auth.auth().currentUser != nil {
+                        
+                        // Fetch user data
+                        
+                        
+                        // Do action depending on user data
+            
+            
+                        if UserInfo.account_type == "employee"{
+            
+                            let HomeEmployee : HomeEmployeeViewController = mainStoryboard.instantiateViewController(withIdentifier: "HomeEmployeeVC") as! HomeEmployeeViewController
+                            window.rootViewController = HomeEmployee
+            
+                        }
+                        else {
+            
+                            let HomeEmployer : HomeEmployerViewController = mainStoryboard.instantiateViewController(withIdentifier: "HomeEmployerVC") as! HomeEmployerViewController
+                            window.rootViewController = HomeEmployer
+                        }
+            
+            
+                    }
+                    else {
+                        Coordinator.goToLogin()
+//                        let loginView : LoginViewController = mainStoryboard.instantiateViewController(withIdentifier: "LoginVC") as! LoginViewController
+//                        window.rootViewController = loginView
+                    }
+        }
+        
+
+
+        window.makeKeyAndVisible()
+        self.window = window
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

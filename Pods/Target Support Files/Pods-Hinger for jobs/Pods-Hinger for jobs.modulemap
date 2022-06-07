@@ -1,0 +1,6 @@
+framework module Pods_Hinger_for_jobs {
+  umbrella header "Pods-Hinger for jobs-umbrella.h"
+
+  export *
+  module * { export * }
+}
