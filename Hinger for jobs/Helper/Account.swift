@@ -15,7 +15,7 @@ class Account {
             
                 }
                 catch{
-                    print("Error")
+                    print("Error has occured")
                 }
         
         Coordinator.changeViewControllerWithIdentifier("LoginVC")
