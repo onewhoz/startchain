@@ -38,13 +38,7 @@ class SignInViewController: UIViewController {
             }
             else {
                 // Signed in succesfully
-                
-                
-                self.defaults.set(true, forKey: "IsUserSignedIn")
-                
-                Utilities.getUserInfo(){
-                    self.nextMove()
-                }
+                Account.continueWhereLeft()
         
                 
             }
@@ -53,64 +47,8 @@ class SignInViewController: UIViewController {
         
     }
     
-    func nextMove(){
-     //
-        if (UserInfo.account_type != "employer" && UserInfo.account_type != "employee"){
-            goToCreatingAnAcount()
-        }
-        else if (UserInfo.first_name == ""){
-            goToSetUpProfile()
-        }
-        else if (UserInfo.account_type == "employer" && UserInfo.first_name != ""){
-            goToHomeEmployerVC()
-        }
-        else {
-            goToHomeEmployeeVC()
-        }
-        
-        
-    }
-    func goToSetUpProfile(){
-        if UserInfo.account_type == "employee" {
-            let controller = storyboard?.instantiateViewController(identifier: "SettingUpProfileForEmployee") as! SettingUpProfileForEmployeeViewController
-            
-            controller.modalPresentationStyle = .fullScreen
-            controller.modalTransitionStyle = .crossDissolve
-            present(controller, animated: false, completion: nil)
-        }
-        else {
-            let controller = storyboard?.instantiateViewController(identifier: "SettingUpProfileForEmployer") as! SettingUpProfileForEmployerViewController
-            
-            controller.modalPresentationStyle = .fullScreen
-            controller.modalTransitionStyle = .crossDissolve
-            present(controller, animated: false, completion: nil)
-        }
-            
-    }
-    
-    func goToCreatingAnAcount(){
-        let controller = storyboard?.instantiateViewController(identifier: "CreatingAnAccountVC") as! CreatingAnAccountViewController
-        
-        controller.modalPresentationStyle = .fullScreen
-        controller.modalTransitionStyle = .crossDissolve
-        present(controller, animated: false, completion: nil)
-    }
-    
-    func goToHomeEmployerVC(){
-        let controller = storyboard?.instantiateViewController(identifier: "HomeEmployerVC") as! HomeEmployerViewController
-        
-        controller.modalPresentationStyle = .fullScreen
-        controller.modalTransitionStyle = .crossDissolve
-        present(controller, animated: false, completion: nil)
-    }
-    func goToHomeEmployeeVC(){
-        let controller = storyboard?.instantiateViewController(identifier: "HomeEmployeeVC") as! HomeEmployeeViewController
-        
-        controller.modalPresentationStyle = .fullScreen
-        controller.modalTransitionStyle = .crossDissolve
-        present(controller, animated: false, completion: nil)
-    }
  
+    
     
 
     @IBAction func loginBtn(_ sender: Any) {
@@ -122,11 +60,7 @@ class SignInViewController: UIViewController {
     @IBAction func loginGoogleBtn(_ sender: Any) {
     }
     @IBAction func creatingAnAccountBtn(_ sender: Any) {
-        let controller = storyboard?.instantiateViewController(identifier: "SignUpVC") as! SignUpViewController
-        
-        controller.modalPresentationStyle = .fullScreen
-        controller.modalTransitionStyle = .crossDissolve
-        present(controller, animated: true, completion: nil)
+        Coordinator.changeViewControllerWithIdentifier("SignUpVC")
     }
     @IBAction func forgotPswrdBtn(_ sender: Any) {
     }

@@ -71,12 +71,10 @@ class SignUpViewController: UIViewController {
                     self.showError("Error creating a user")
                 }
                 else {
-                    Data.SetDataForUser(["date_of_registration":"2022", "email" : email])
+                    Data.setDataForUser(["date_of_registration":"2022", "email" : email])
                     
-                    let defaults = UserDefaults.standard
-                    defaults.set(true, forKey: "IsUserSignedIn")
-                    
-                    self.transitionToNext()
+                
+                    Coordinator.changeViewControllerWithIdentifier("CreatingAnAccountVC")
                     
                 }
             }
@@ -86,13 +84,7 @@ class SignUpViewController: UIViewController {
         
     }
     
-    func transitionToNext(){
-        let controller = self.storyboard?.instantiateViewController(identifier: "CreatingAnAccountVC") as! CreatingAnAccountViewController
-        
-        controller.modalPresentationStyle = .fullScreen
-        controller.modalTransitionStyle = .crossDissolve
-        self.present(controller, animated: true, completion: nil)
-    }
+   
     
     func showError(_ message : String){
         errorLabel.text = message
@@ -110,11 +102,7 @@ class SignUpViewController: UIViewController {
     }
     @IBAction func signInBtn(_ sender: Any) {
         
-        let controller = storyboard?.instantiateViewController(identifier: "SignInVC") as! SignInViewController
-        
-        controller.modalPresentationStyle = .fullScreen
-        controller.modalTransitionStyle = .crossDissolve
-        present(controller, animated: true, completion: nil)
+        Coordinator.changeViewControllerWithIdentifier("SignInVC")
         
     }
 }

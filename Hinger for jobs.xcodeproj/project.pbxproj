@@ -10,6 +10,9 @@
 		737EBF13B8EB362F9B577F86 /* Pods_Hinger_for_jobsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC89B58A00A0279B49D2B59 /* Pods_Hinger_for_jobsTests.framework */; };
 		B97F611988D72D04680023FF /* Pods_Hinger_for_jobs_Hinger_for_jobsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD6D88832104444B163A738 /* Pods_Hinger_for_jobs_Hinger_for_jobsUITests.framework */; };
 		C41467DF284FB5E600772E66 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41467DE284FB5E600772E66 /* Coordinator.swift */; };
+		C41467E12850D85F00772E66 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41467E02850D85E00772E66 /* Account.swift */; };
+		C41467E32851482900772E66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C41467E22851482900772E66 /* Assets.xcassets */; };
+		C41467E52851484600772E66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C41467E42851484600772E66 /* Assets.xcassets */; };
 		C4184C50284AF0C2009107BD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4184C4F284AF0C2009107BD /* LoginViewController.swift */; };
 		C4184C55284BB6E2009107BD /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4184C54284BB6E2009107BD /* SignInViewController.swift */; };
 		C4184C59284BC26E009107BD /* CreatingAnAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4184C58284BC26E009107BD /* CreatingAnAccountViewController.swift */; };
@@ -23,7 +26,6 @@
 		C491C4FC284A7422002B6718 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C491C4FB284A7422002B6718 /* AppDelegate.swift */; };
 		C491C4FE284A7422002B6718 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C491C4FD284A7422002B6718 /* SceneDelegate.swift */; };
 		C491C503284A7422002B6718 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C491C501284A7422002B6718 /* Main.storyboard */; };
-		C491C505284A7425002B6718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C491C504284A7425002B6718 /* Assets.xcassets */; };
 		C491C508284A7425002B6718 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C491C506284A7425002B6718 /* LaunchScreen.storyboard */; };
 		C491C513284A7426002B6718 /* Hinger_for_jobsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C491C512284A7426002B6718 /* Hinger_for_jobsTests.swift */; };
 		C491C51D284A7426002B6718 /* Hinger_for_jobsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C491C51C284A7426002B6718 /* Hinger_for_jobsUITests.swift */; };
@@ -63,6 +65,9 @@
 		97772A38CC1144FFE949751B /* Pods-Hinger for jobs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hinger for jobs.release.xcconfig"; path = "Target Support Files/Pods-Hinger for jobs/Pods-Hinger for jobs.release.xcconfig"; sourceTree = "<group>"; };
 		ABA23F3006F72852B0CEBA2D /* Pods-Hinger for jobsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hinger for jobsTests.debug.xcconfig"; path = "Target Support Files/Pods-Hinger for jobsTests/Pods-Hinger for jobsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C41467DE284FB5E600772E66 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		C41467E02850D85E00772E66 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		C41467E22851482900772E66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C41467E42851484600772E66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4184C4F284AF0C2009107BD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C4184C54284BB6E2009107BD /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		C4184C58284BC26E009107BD /* CreatingAnAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingAnAccountViewController.swift; sourceTree = "<group>"; };
@@ -77,7 +82,6 @@
 		C491C4FB284A7422002B6718 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C491C4FD284A7422002B6718 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C491C502284A7422002B6718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C491C504284A7425002B6718 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C491C507284A7425002B6718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C491C509284A7425002B6718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C491C50E284A7426002B6718 /* Hinger for jobsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hinger for jobsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,6 +197,7 @@
 				C4184C97284C0150009107BD /* Utilities.swift */,
 				C4874811284F963A00878610 /* Data.swift */,
 				C41467DE284FB5E600772E66 /* Coordinator.swift */,
+				C41467E02850D85E00772E66 /* Account.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -283,10 +288,10 @@
 				C491C4FB284A7422002B6718 /* AppDelegate.swift */,
 				C491C4FD284A7422002B6718 /* SceneDelegate.swift */,
 				C491C501284A7422002B6718 /* Main.storyboard */,
-				C491C504284A7425002B6718 /* Assets.xcassets */,
 				C491C506284A7425002B6718 /* LaunchScreen.storyboard */,
 				C491C509284A7425002B6718 /* Info.plist */,
 				C443E59C284D864700C4A35D /* GoogleService-Info.plist */,
+				C41467E42851484600772E66 /* Assets.xcassets */,
 			);
 			path = "Hinger for jobs";
 			sourceTree = "<group>";
@@ -311,6 +316,7 @@
 		C491C52B284A7471002B6718 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C41467E22851482900772E66 /* Assets.xcassets */,
 				C4F1FFD8284A7CC300CB8D1D /* OnboardingSlide.swift */,
 				C443E59A284D16F500C4A35D /* UserInfo.swift */,
 			);
@@ -465,8 +471,9 @@
 			files = (
 				C491C508284A7425002B6718 /* LaunchScreen.storyboard in Resources */,
 				C443E59D284D864800C4A35D /* GoogleService-Info.plist in Resources */,
-				C491C505284A7425002B6718 /* Assets.xcassets in Resources */,
+				C41467E32851482900772E66 /* Assets.xcassets in Resources */,
 				C491C503284A7422002B6718 /* Main.storyboard in Resources */,
+				C41467E52851484600772E66 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +603,7 @@
 			files = (
 				C4DD4FB5284CF5B300011DB6 /* HomeEmployeeViewController.swift in Sources */,
 				C4DD4FB3284CF5A600011DB6 /* HomeEmployerViewController.swift in Sources */,
+				C41467E12850D85F00772E66 /* Account.swift in Sources */,
 				C4184C50284AF0C2009107BD /* LoginViewController.swift in Sources */,
 				C4F1FFD9284A7CC300CB8D1D /* OnboardingSlide.swift in Sources */,
 				C443E5A6284E51F800C4A35D /* SettingUpProfileForEmployeeViewController.swift in Sources */,

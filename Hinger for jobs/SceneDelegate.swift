@@ -18,47 +18,29 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(windowScene: windowScene)
         Coordinator.window = window
-        let mainStoryboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+       
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         
         if(!appDelegate.hasAlreadyLaunched){
             // App is opened for the first time
             appDelegate.sethasAlreadyLaunched()
-            
-            let Onboarding : OnboardingViewController = mainStoryboard.instantiateViewController(withIdentifier: "OnboardingVC") as! OnboardingViewController
-            window.rootViewController = Onboarding
-            
-            
-        }
+            Coordinator.changeViewControllerWithIdentifierNoTransition("OnboardingVC")
+                    }
         else{
+            // App is opened not for the first time
                     if Auth.auth().currentUser != nil {
-                        
-                        // Fetch user data
-                        
-                        
-                        // Do action depending on user data
-            
-            
-                        if UserInfo.account_type == "employee"{
-            
-                            let HomeEmployee : HomeEmployeeViewController = mainStoryboard.instantiateViewController(withIdentifier: "HomeEmployeeVC") as! HomeEmployeeViewController
-                            window.rootViewController = HomeEmployee
-            
-                        }
-                        else {
-            
-                            let HomeEmployer : HomeEmployerViewController = mainStoryboard.instantiateViewController(withIdentifier: "HomeEmployerVC") as! HomeEmployerViewController
-                            window.rootViewController = HomeEmployer
-                        }
-            
-            
+                        // If user is signed in
+        
+                        Account.continueWhereLeft()
+                        // We have to fix this later in future bacause without this function black screen appears every time before resuming the screen.
+                        Coordinator.changeViewControllerWithIdentifierNoTransition("LaunchScreenVC")
                     }
                     else {
-                        Coordinator.goToLogin()
-//                        let loginView : LoginViewController = mainStoryboard.instantiateViewController(withIdentifier: "LoginVC") as! LoginViewController
-//                        window.rootViewController = loginView
+                        Coordinator.changeViewControllerWithIdentifierNoTransition("LoginVC")
+                        
                     }
+            
         }
         
 

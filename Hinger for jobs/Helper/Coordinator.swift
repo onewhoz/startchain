@@ -9,37 +9,32 @@ import UIKit
 
 class Coordinator {
     static var window : UIWindow!
+    static let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
     
-    
-    
-    static func goToCreatingAnAcount(){
+    private static func transition(){
+        let options: UIView.AnimationOptions = .transitionCrossDissolve
+        let duration: TimeInterval = 0.2
         
-        
-//
-//        let controller = storyboard.instantiateViewController(identifier: "CreatingAnAccountVC") as! CreatingAnAccountViewController
-//
-//
-//        controller.modalPresentationStyle = .fullScreen
-//        controller.modalTransitionStyle = .crossDissolve
-//
-//        UIApplication.shared.windows.first?.rootViewController = controller
-//        UIApplication.shared.windows.first?.makeKeyAndVisible()
-//
+        UIView.transition(with: Coordinator.window, duration: duration, options: options, animations: {}, completion:
+        { completed in
+            // maybe do something on completion here
+        })
     }
-    static func goToLogin(){
-       let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-       //let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(identifier: "LoginVC") as! LoginViewController
+    static func changeViewControllerWithIdentifierNoTransition(_ identifier:String){
         
-
-        controller.modalPresentationStyle = .fullScreen
-        controller.modalTransitionStyle = .crossDissolve
-        
-//        UIApplication.shared.windows.first!.rootViewController = controller
-//        UIApplication.shared.windows.first?.makeKeyAndVisible()
-//        
+        let controller = storyboard.instantiateViewController(identifier: identifier)
         Coordinator.window.rootViewController = controller
+     
         
     }
+    static func changeViewControllerWithIdentifier(_ identifier:String){
+        
+        changeViewControllerWithIdentifierNoTransition(identifier)
+     
+        transition()
+        
+    }
+    
+ 
 
 }

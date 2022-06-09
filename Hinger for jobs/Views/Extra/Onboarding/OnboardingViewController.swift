@@ -34,10 +34,10 @@ class OnboardingViewController: UIViewController {
         super.viewDidLoad()
 
         slides = [
-            OnboardingSlide(title: "A new ways to find a job", description: "Less stresfull and more convinient ", image: #imageLiteral(resourceName: "resume")),
-            OnboardingSlide(title: "Title2", description: "Description2", image: #imageLiteral(resourceName: "approved")),
-            OnboardingSlide(title: "Title3", description: "Description3", image: #imageLiteral(resourceName: "growth")),
-            OnboardingSlide(title: "Title3", description: "Description3", image: #imageLiteral(resourceName: "growth"))
+            OnboardingSlide(title: "A new ways to find a job", description: "Less stresfull and more convinient ", image: #imageLiteral(resourceName: "work1")),
+            OnboardingSlide(title: "Find people", description: "Millions and millons of people are looking to hire and to find a job", image: #imageLiteral(resourceName: "work2")),
+            OnboardingSlide(title: "Relax", description: "You will have more experience with less waste", image: #imageLiteral(resourceName: "work3")),
+           
         ]
         pageControl.numberOfPages = slides.count
     }
@@ -46,11 +46,7 @@ class OnboardingViewController: UIViewController {
         if currentPage == slides.count - 1{
         
            // let controller = storyboard?.instantiateViewController(identifier: "HomeNC") as! UINavigationController
-            let controller = storyboard?.instantiateViewController(identifier: "LoginVC") as! LoginViewController
-            
-            controller.modalPresentationStyle = .fullScreen
-            controller.modalTransitionStyle = .crossDissolve
-            present(controller, animated: true, completion: nil)
+            Coordinator.changeViewControllerWithIdentifier("LoginVC")
             
         } else {
             currentPage += 1

@@ -16,19 +16,7 @@ class HomeEmployeeViewController: UIViewController {
     }
     
     @IBAction func logOutBtn(_ sender: Any) {
-        do{
-                    try FirebaseAuth.Auth.auth().signOut()
-            
-                }
-                catch{
-                    print("Error")
-                }
-        
-        let controller = storyboard?.instantiateViewController(identifier: "LoginVC") as! LoginViewController
-        
-        controller.modalPresentationStyle = .fullScreen
-        controller.modalTransitionStyle = .crossDissolve
-        present(controller, animated: true, completion: nil)
+        Account.logOut()
 
     }
 }

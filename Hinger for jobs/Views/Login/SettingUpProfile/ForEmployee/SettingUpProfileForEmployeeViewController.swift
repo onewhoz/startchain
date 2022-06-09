@@ -21,6 +21,7 @@ class SettingUpProfileForEmployeeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
 
         // Do any additional setup after loading the view.
     }
@@ -37,7 +38,7 @@ class SettingUpProfileForEmployeeViewController: UIViewController {
         let data = ["occupancy" : occupancy,
                     "first_name" : firstName,
                     "last_name" : lastName]
-        Data.SetDataForUser(data)
+        Data.setDataForUser(data)
         
         UpdateLocalAccountInfo()
     
@@ -54,37 +55,12 @@ class SettingUpProfileForEmployeeViewController: UIViewController {
         
     }
   
-    func nextView(){
-        if UserInfo.account_type == "employee"{
-            goToHomeEmployeeVC()
-        }
-        else{
-            goToHomeEmployerVC()
-        }
-    }
-    
-    func goToHomeEmployerVC(){
-        let controller = storyboard?.instantiateViewController(identifier: "HomeEmployerVC") as! HomeEmployerViewController
-        
-        controller.modalPresentationStyle = .fullScreen
-        controller.modalTransitionStyle = .crossDissolve
-        present(controller, animated: false, completion: nil)
-    }
-    func goToHomeEmployeeVC(){
-        let controller = storyboard?.instantiateViewController(identifier: "HomeEmployeeVC") as! HomeEmployeeViewController
-        
-        controller.modalPresentationStyle = .fullScreen
-        controller.modalTransitionStyle = .crossDissolve
-        present(controller, animated: false, completion: nil)
-    }
-    
-    
     
     @IBAction func nextBtnClicked(_ sender: Any) {
         
         CleanFieldData()
         UpdateAccountInfo()
-        nextView()
+        Coordinator.changeViewControllerWithIdentifier("HomeEmployeeVC")
         
         
     }

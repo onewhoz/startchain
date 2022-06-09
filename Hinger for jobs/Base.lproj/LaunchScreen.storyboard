@@ -17,37 +17,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="gaz-cu-tJg">
-                                <rect key="frame" x="107" y="323" width="200" height="260.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="qvH-36-RTL">
+                                <rect key="frame" x="0.0" y="-16" width="414" height="938"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="gaz-cu-tJg">
+                                <rect key="frame" x="69.5" y="306" width="275" height="284.5"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appstore" translatesAutoresizingMaskIntoConstraints="NO" id="vLe-FJ-uJn">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="work" translatesAutoresizingMaskIntoConstraints="NO" id="vLe-FJ-uJn">
+                                        <rect key="frame" x="37.5" y="0.0" width="200" height="200"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="0aA-XM-A8Y"/>
                                             <constraint firstAttribute="height" constant="200" id="vkI-lt-dWy"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hinger for jobs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vik-lc-3rq">
-                                        <rect key="frame" x="0.0" y="240" width="200" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="240" width="275" height="44.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="34"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="Vik-lc-3rq" firstAttribute="centerX" secondItem="gaz-cu-tJg" secondAttribute="centerX" id="5Ya-LY-Cn9"/>
-                                    <constraint firstItem="Vik-lc-3rq" firstAttribute="leading" secondItem="gaz-cu-tJg" secondAttribute="leading" id="PyY-au-dzW"/>
-                                    <constraint firstAttribute="bottom" secondItem="Vik-lc-3rq" secondAttribute="bottom" id="nje-hG-N6J"/>
-                                    <constraint firstAttribute="trailing" secondItem="Vik-lc-3rq" secondAttribute="trailing" id="x91-mE-lhz"/>
-                                    <constraint firstItem="Vik-lc-3rq" firstAttribute="top" secondItem="vLe-FJ-uJn" secondAttribute="bottom" constant="20" id="xlo-px-cYA"/>
-                                </constraints>
                             </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="bvD-7l-vfX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="gaz-cu-tJg" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="WzE-Re-t3G"/>
-                            <constraint firstItem="gaz-cu-tJg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gw6-Hf-qVv"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="qvH-36-RTL" secondAttribute="bottom" constant="-60" id="TOq-OQ-t2S"/>
+                            <constraint firstItem="gaz-cu-tJg" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="WzE-Re-t3G"/>
+                            <constraint firstAttribute="trailing" secondItem="qvH-36-RTL" secondAttribute="trailing" id="cky-Hl-d6D"/>
+                            <constraint firstItem="qvH-36-RTL" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-60" id="e0o-y6-s1J"/>
+                            <constraint firstItem="gaz-cu-tJg" firstAttribute="centerX" secondItem="bvD-7l-vfX" secondAttribute="centerX" id="gw6-Hf-qVv"/>
+                            <constraint firstItem="qvH-36-RTL" firstAttribute="leading" secondItem="bvD-7l-vfX" secondAttribute="leading" id="kXs-4s-OMd"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -57,7 +57,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="appstore" width="1024" height="1024"/>
+        <image name="background" width="540" height="360"/>
+        <image name="work" width="256" height="256"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

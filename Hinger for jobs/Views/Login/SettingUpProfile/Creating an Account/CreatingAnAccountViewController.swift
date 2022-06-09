@@ -22,35 +22,18 @@ class CreatingAnAccountViewController: UIViewController {
         UserInfo.account_type = account_type
     }
     
-    func MoveToSettingUpProfileForEmployee(){
-        let controller = storyboard?.instantiateViewController(identifier: "SettingUpProfileForEmployee") as! SettingUpProfileForEmployeeViewController
-        
-        controller.modalPresentationStyle = .fullScreen
-        controller.modalTransitionStyle = .crossDissolve
-        present(controller, animated: true, completion: nil)
-    }
-    func MoveToSettingUpProfileForEmployer(){
-        let controller = storyboard?.instantiateViewController(identifier: "SettingUpProfileForEmployer") as! SettingUpProfileForEmployerViewController
-        
-        controller.modalPresentationStyle = .fullScreen
-        controller.modalTransitionStyle = .crossDissolve
-        present(controller, animated: true, completion: nil)
-    }
+ 
     
     @IBAction func findJobBtn(_ sender: Any) {
         UpdateAccountType("employee")
-        MoveToSettingUpProfileForEmployee()
+        Coordinator.changeViewControllerWithIdentifier("SettingUpProfileForEmployeeVC")
         
     }
     @IBAction func hirePplBtn(_ sender: Any) {
         UpdateAccountType("employer")
-        MoveToSettingUpProfileForEmployer()
+        Coordinator.changeViewControllerWithIdentifier("SettingUpProfileForEmployerVC")
     }
-    @IBAction func signInBtn(_ sender: Any) {
-        let controller = storyboard?.instantiateViewController(identifier: "SignInVC") as! SignInViewController
-        
-        controller.modalPresentationStyle = .fullScreen
-        controller.modalTransitionStyle = .crossDissolve
-        present(controller, animated: true, completion: nil)
+    @IBAction func signOutBtn(_ sender: Any) {
+        Account.logOut()
     }
 }
