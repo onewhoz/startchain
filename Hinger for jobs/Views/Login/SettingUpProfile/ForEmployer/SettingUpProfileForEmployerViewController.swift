@@ -68,7 +68,7 @@ class SettingUpProfileForEmployerViewController: UIViewController {
         
         CleanFieldData()
         UpdateAccountInfo()
-        Coordinator.changeViewControllerWithIdentifier("HomeEmployerVC")
+        Coordinator.changeViewControllerWithIdentifier("HomeEmployerTBC")
         
         
 
