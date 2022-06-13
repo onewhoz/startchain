@@ -1349,17 +1349,17 @@
                                 <rect key="frame" x="0.0" y="-16" width="414" height="938"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="BVg-ge-4Ce">
-                                <rect key="frame" x="69.5" y="306" width="275" height="284.5"/>
+                                <rect key="frame" x="88.5" y="306" width="237" height="284.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="work" translatesAutoresizingMaskIntoConstraints="NO" id="qMn-0Y-YsV">
-                                        <rect key="frame" x="37.5" y="0.0" width="200" height="200"/>
+                                        <rect key="frame" x="18.5" y="0.0" width="200" height="200"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="S8V-II-hbS"/>
                                             <constraint firstAttribute="width" constant="200" id="eU7-XK-5dI"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hinger for jobs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eli-TA-cAS">
-                                        <rect key="frame" x="0.0" y="240" width="275" height="44.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StartupChain" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eli-TA-cAS">
+                                        <rect key="frame" x="0.0" y="240" width="237" height="44.5"/>
                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="34"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
