@@ -13,7 +13,7 @@
         <!--Onboarding View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="OnboardingVC" id="BYZ-38-t0r" customClass="OnboardingViewController" customModule="Hinger_for_jobs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OnboardingVC" id="BYZ-38-t0r" customClass="OnboardingViewController" customModule="StartChain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,7 +32,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCollectionViewCell" id="lu2-uN-GRp" customClass="OnboardingCollectionViewCell" customModule="Hinger_for_jobs" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCollectionViewCell" id="lu2-uN-GRp" customClass="OnboardingCollectionViewCell" customModule="StartChain" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="8.5" width="414" height="659"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="qax-uf-Ref">
@@ -147,7 +147,7 @@
         <!--Login View Controller-->
         <scene sceneID="RdA-IB-T7b">
             <objects>
-                <viewController storyboardIdentifier="LoginVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ojw-6r-g19" customClass="LoginViewController" customModule="Hinger_for_jobs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ojw-6r-g19" customClass="LoginViewController" customModule="StartChain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MF9-9T-BmA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,29 +156,29 @@
                                 <rect key="frame" x="0.0" y="-60" width="414" height="982"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Ros-Hu-Np5">
-                                <rect key="frame" x="7" y="123.5" width="400" height="659"/>
+                                <rect key="frame" x="7" y="125" width="400" height="656"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hinger for jobs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBg-Q3-42S">
-                                        <rect key="frame" x="61" y="0.0" width="278" height="54"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StartChain" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBg-Q3-42S">
+                                        <rect key="frame" x="65" y="0.0" width="270.5" height="51"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="45"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jobfind" translatesAutoresizingMaskIntoConstraints="NO" id="gVW-QX-oRA">
-                                        <rect key="frame" x="0.0" y="72" width="400" height="400"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startup" translatesAutoresizingMaskIntoConstraints="NO" id="gVW-QX-oRA">
+                                        <rect key="frame" x="0.0" y="69" width="400" height="400"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="400" id="iXk-Si-lS6"/>
                                             <constraint firstAttribute="width" constant="400" id="qX9-78-LkE"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's make the World a better place" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNN-Ba-o3a">
-                                        <rect key="frame" x="92.5" y="490" width="215" height="16"/>
+                                        <rect key="frame" x="92.5" y="487" width="215" height="16"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="sCs-Fn-2x1">
-                                        <rect key="frame" x="35" y="524" width="330" height="135"/>
+                                        <rect key="frame" x="35" y="521" width="330" height="135"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffx-VB-PoU">
                                                 <rect key="frame" x="0.0" y="0.0" width="330" height="60"/>
@@ -248,7 +248,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="xHr-ET-uet">
             <objects>
-                <viewController storyboardIdentifier="SignUpVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Uu7-Dz-ANs" customClass="SignUpViewController" customModule="Hinger_for_jobs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Uu7-Dz-ANs" customClass="SignUpViewController" customModule="StartChain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="imY-mt-GT9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -421,7 +421,7 @@
         <!--Sign In View Controller-->
         <scene sceneID="0Fw-Hb-M91">
             <objects>
-                <viewController storyboardIdentifier="SignInVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VWW-n0-u3f" customClass="SignInViewController" customModule="Hinger_for_jobs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VWW-n0-u3f" customClass="SignInViewController" customModule="StartChain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zvh-NU-KSH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -605,7 +605,7 @@
         <!--Creating An Account View Controller-->
         <scene sceneID="JdJ-v8-4Kv">
             <objects>
-                <viewController storyboardIdentifier="CreatingAnAccountVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="feL-gi-aQp" customClass="CreatingAnAccountViewController" customModule="Hinger_for_jobs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreatingAnAccountVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="feL-gi-aQp" customClass="CreatingAnAccountViewController" customModule="StartChain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nzn-EW-wy7" customClass="Sign">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -675,7 +675,6 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="hirePplBtn:" destination="feL-gi-aQp" eventType="touchUpInside" id="e6x-d8-mzQ"/>
-                                            <action selector="signIn:" destination="Ojw-6r-g19" eventType="touchUpInside" id="mkz-fP-fww"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQo-OE-O1H">
@@ -715,7 +714,7 @@
         <!--Setting Up Profile For Employee View Controller-->
         <scene sceneID="GBk-A8-uDj">
             <objects>
-                <viewController storyboardIdentifier="SettingUpProfileForEmployeeVC" id="NeJ-7n-IQm" customClass="SettingUpProfileForEmployeeViewController" customModule="Hinger_for_jobs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingUpProfileForEmployeeVC" id="NeJ-7n-IQm" customClass="SettingUpProfileForEmployeeViewController" customModule="StartChain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8r6-04-WD6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -836,7 +835,7 @@
         <!--Sergey-->
         <scene sceneID="PCt-Xe-i0K">
             <objects>
-                <viewController storyboardIdentifier="HomeEmployerVC" id="MiQ-vm-XaA" customClass="HomeEmployerViewController" customModule="Hinger_for_jobs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeEmployerVC" id="MiQ-vm-XaA" customClass="HomeEmployerViewController" customModule="StartChain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="toT-rF-JPN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -897,7 +896,7 @@
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meA-F7-Uai">
                                                                         <rect key="frame" x="10" y="65.5" width="354" height="345"/>
-                                                                        <mutableString key="text">Reliable and experienced Housekeeper with over five years of experience maintaining the cleanliness and organization of residences and offices. Skilled at performing basic cleaning duties, deep sanitation, organizing spaces, and tending to general housekeeping tasks in a time efficient manner. Committed to providing clients with superior service and satisfaction. Reliable and experienced Housekeeper with over five years of experience maintaining the cleanliness and organization of residences and offices. Skilled at performing basic cleaning duties, deep sanitation, organizing spaces, and tending to general housekeeping tasks in a time efficient manner. Committed to providing clients with superior service and satisfaction.</mutableString>
+                                                                        <string key="text">Reliable and experienced Housekeeper with over five years of experience maintaining the cleanliness and organization of residences and offices. Skilled at performing basic cleaning duties, deep sanitation, organizing spaces, and tending to general housekeeping tasks in a time efficient manner. Committed to providing clients with superior service and satisfaction. Reliable and experienced Housekeeper with over five years of experience maintaining the cleanliness and organization of residences and offices. Skilled at performing basic cleaning duties, deep sanitation, organizing spaces, and tending to general housekeeping tasks in a time efficient manner. Committed to providing clients with superior service and satisfaction.</string>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -953,7 +952,7 @@
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAM-Dh-Ce5">
                                                                         <rect key="frame" x="10" y="133.5" width="354" height="243.5"/>
-                                                                        <mutableString key="text">● Sanitizing remotes, door handles and other fixtures
+                                                                        <string key="text">● Sanitizing remotes, door handles and other fixtures
 ● Knowledge of cleaning products and chemicals
 ● Ordering and restocking supplies
 ● Filing reports for broken and missing items
@@ -961,7 +960,7 @@
 ● Works well independently and in a team
 ● Time management
 ● Reliable
-● Honest</mutableString>
+● Honest</string>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -1128,7 +1127,7 @@
         <!--Home Employee View Controller-->
         <scene sceneID="Y1r-h6-BXe">
             <objects>
-                <viewController storyboardIdentifier="HomeEmployeeVC" id="bz4-er-mlB" customClass="HomeEmployeeViewController" customModule="Hinger_for_jobs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeEmployeeVC" id="bz4-er-mlB" customClass="HomeEmployeeViewController" customModule="StartChain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UDm-WM-MTh" customClass="Home">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1190,7 +1189,7 @@
         <!--Setting Up Profile For Employer View Controller-->
         <scene sceneID="chX-y0-Un4">
             <objects>
-                <viewController storyboardIdentifier="SettingUpProfileForEmployerVC" id="cOn-EH-tdK" customClass="SettingUpProfileForEmployerViewController" customModule="Hinger_for_jobs" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingUpProfileForEmployerVC" id="cOn-EH-tdK" customClass="SettingUpProfileForEmployerViewController" customModule="StartChain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RJw-JX-JWP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1327,7 +1326,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="companyNameTextField" destination="ZsS-Tj-MCv" id="TLI-vT-qgS"/>
+                        <outlet property="companyNameTextField" destination="ZsS-Tj-MCv" id="gNE-l3-Szi"/>
                         <outlet property="firstNameTextField" destination="RxR-Xl-ji9" id="gud-M3-36V"/>
                         <outlet property="industryTextField" destination="Ezt-Ba-LTS" id="dhW-0R-0ld"/>
                         <outlet property="lastNameTextField" destination="VeB-Em-47P" id="Xrv-sC-USx"/>
@@ -1454,7 +1453,6 @@
     <resources>
         <image name="arrow.turn.down.left" catalog="system" width="128" height="99"/>
         <image name="background" width="540" height="360"/>
-        <image name="jobfind" width="593" height="465"/>
         <image name="message.fill" catalog="system" width="128" height="113"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="profile_picture" width="540" height="360"/>
@@ -1462,6 +1460,7 @@
         <image name="singup" width="256" height="256"/>
         <image name="slider.horizontal.3" catalog="system" width="128" height="100"/>
         <image name="square.fill.on.square.fill" catalog="system" width="128" height="113"/>
+        <image name="startup" width="2500" height="2500"/>
         <image name="work" width="256" height="256"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

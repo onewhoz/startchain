@@ -24,7 +24,7 @@ class Account {
     
     static func continueWhereLeft(){
         Data.fetchUser {
-            if UserInfo.account_type == nil{
+            if UserInfo.account_type == nil {
                 Coordinator.changeViewControllerWithIdentifier("CreatingAnAccountVC")
             }
             

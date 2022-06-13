@@ -10,8 +10,8 @@ import FirebaseFirestore
 import FirebaseAuth
 class SettingUpProfileForEmployerViewController: UIViewController {
 
+
     @IBOutlet weak var companyNameTextField: UITextField!
-    
     @IBOutlet weak var industryTextField: UITextField!
     
     @IBOutlet weak var firstNameTextField: UITextField!

@@ -11,9 +11,6 @@ import FirebaseFirestore
 class LoginViewController: UIViewController {
 
     
-    let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    let defaults = UserDefaults.standard
-    
     
     override func viewDidLoad() {
         

@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>171917678122-60eksu3gsvvgdvu92rinbm81oet2ka5g.apps.googleusercontent.com</string>
+	<string>42986975771-q526ba2l81jkafvhrcvun4as8ri21lnb.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.171917678122-60eksu3gsvvgdvu92rinbm81oet2ka5g</string>
+	<string>com.googleusercontent.apps.42986975771-q526ba2l81jkafvhrcvun4as8ri21lnb</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBaStqaYtuedNIAh3Q-tGpeDoav_dPuX98</string>
+	<string>AIzaSyCtvl0tOsj66WikM-_piTsbm4J4YUpgu6k</string>
 	<key>GCM_SENDER_ID</key>
-	<string>171917678122</string>
+	<string>42986975771</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>onewho.Hinger-for-jobs</string>
+	<string>onewho.startchain</string>
 	<key>PROJECT_ID</key>
-	<string>hinger-for-jobs</string>
+	<string>startchain-904cc</string>
 	<key>STORAGE_BUCKET</key>
-	<string>hinger-for-jobs.appspot.com</string>
+	<string>startchain-904cc.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:171917678122:ios:803411e4f64f1e302d9553</string>
-	<key>DATABASE_URL</key>
-	<string>https://hinger-for-jobs-default-rtdb.firebaseio.com</string>
+	<string>1:42986975771:ios:2d6a12a1eabdbefc0f3ebe</string>
 </dict>
 </plist>
