@@ -31,3 +31,15 @@ extension UIViewController{
    
     
 }
+
+extension Date {
+
+    static func -(recent: Date, previous: Date) -> (Int) {
+       
+        var year = Calendar.current.dateComponents([.year], from: previous, to: recent).year!
+        
+
+        return (year)
+    }
+
+}

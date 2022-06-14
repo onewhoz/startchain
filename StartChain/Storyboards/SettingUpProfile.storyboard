@@ -196,6 +196,10 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </pageControl>
                     </navigationItem>
+                    <connections>
+                        <outlet property="firstNameTextField" destination="cqD-Zh-mdm" id="DJT-3D-hyN"/>
+                        <outlet property="lastNameTextField" destination="Vss-eG-jeb" id="FrP-94-YFu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uUi-9a-xdv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -243,6 +247,12 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="Sud-U8-ncp"/>
                                 </constraints>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-1925038800">
+                                    <!--1940-01-01 11:00:00 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="valueHasChangedDatePicker:" destination="Ih8-Y2-SIl" eventType="valueChanged" id="Re3-vg-HvB"/>
+                                </connections>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VI2-05-zTc">
                                 <rect key="frame" x="40" y="384" width="334" height="27.5"/>
@@ -250,14 +260,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZa-kz-5Jm">
-                                <rect key="frame" x="0.0" y="421.5" width="414" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZa-kz-5Jm">
+                                <rect key="frame" x="0.0" y="421.5" width="414" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This can't be changed later" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sea-sE-HAo">
-                                <rect key="frame" x="40" y="465.5" width="334" height="21"/>
+                                <rect key="frame" x="40" y="441.5" width="334" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -292,6 +302,10 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </pageControl>
                     </navigationItem>
+                    <connections>
+                        <outlet property="ageLabel" destination="EZa-kz-5Jm" id="Oy8-iA-7BL"/>
+                        <outlet property="dobDatePicker" destination="5ni-Lm-pun" id="3JH-QZ-drm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Icx-dc-VAu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
