@@ -9,7 +9,8 @@ import UIKit
 
 class Coordinator {
     static var window : UIWindow!
-    static let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    static var storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+   
     
     private static func transition(){
         let options: UIView.AnimationOptions = .transitionCrossDissolve
@@ -22,6 +23,10 @@ class Coordinator {
     }
     static func changeViewControllerWithIdentifierNoTransition(_ identifier:String){
         
+        if identifier == "SettingUpProfileForIndividualNC" {
+            storyboard = UIStoryboard(name: "SettingUpProfile", bundle: nil)
+            
+        }
         let controller = storyboard.instantiateViewController(identifier: identifier)
         Coordinator.window.rootViewController = controller
      

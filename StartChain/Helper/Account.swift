@@ -34,7 +34,7 @@ class Account {
     
                 }
                 else {
-                    Coordinator.changeViewControllerWithIdentifier("SettingUpProfileForEmployerVC")
+                    Coordinator.changeViewControllerWithIdentifier("SettingUpProfileForIndividualNC")
                 }
             }
             else{

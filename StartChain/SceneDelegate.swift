@@ -31,7 +31,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             // App is opened not for the first time
                     if Auth.auth().currentUser != nil {
                         // If user is signed in
-        
                         Account.continueWhereLeft()
                         // We have to fix this later in future bacause without this function black screen appears every time before resuming the screen.
                         Coordinator.changeViewControllerWithIdentifierNoTransition("LaunchScreenVC")
