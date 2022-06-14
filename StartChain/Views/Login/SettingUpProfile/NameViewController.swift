@@ -9,6 +9,13 @@ import UIKit
 
 class NameViewController: UIViewController {
 
+    @IBOutlet weak var firstNameTextField: UITextField!
+    
+    @IBOutlet weak var lastNameTextField: UITextField!
+    
+    var lastName, firstName : String?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,17 +23,28 @@ class NameViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func CleanFieldData(){
+        firstName = firstNameTextField.text!
+        lastName = lastNameTextField.text!
     }
-    */
+    private func UpdateLocalAccountInfo(){
+        UserInfo.first_name = firstName
+        UserInfo.last_name = lastName
+    }
+    func UpdateAccountInfoAndMoveOn(){
+        CleanFieldData()
+        let data = ["first_name" : firstName, "last_name" : lastName]
+        Data.setDataForUser(data){
+            self.UpdateLocalAccountInfo()
+            Coordinator.pushNavBar("AgeVC", "SettingUpProfile", self.navigationController.self!)
+        }
+        
+    }
+    
     @IBAction func nextPageBtnClicked(_ sender: Any) {
+        //UpdateAccountInfoAndMoveOn()
         Coordinator.pushNavBar("AgeVC", "SettingUpProfile", navigationController.self!)
+        
     }
     
 }

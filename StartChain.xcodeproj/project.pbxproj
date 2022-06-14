@@ -24,6 +24,7 @@
 		C4801D522858B80600989149 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4801D512858B80600989149 /* NameViewController.swift */; };
 		C4801D542858B8D700989149 /* AgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4801D532858B8D700989149 /* AgeViewController.swift */; };
 		C4801D572858C08100989149 /* InterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4801D562858C08100989149 /* InterestViewController.swift */; };
+		C4801D5A285905CB00989149 /* ExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4801D59285905CA00989149 /* ExperienceViewController.swift */; };
 		C4874812284F963A00878610 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4874811284F963A00878610 /* Data.swift */; };
 		C491C4FC284A7422002B6718 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C491C4FB284A7422002B6718 /* AppDelegate.swift */; };
 		C491C4FE284A7422002B6718 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C491C4FD284A7422002B6718 /* SceneDelegate.swift */; };
@@ -58,6 +59,7 @@
 		C4801D512858B80600989149 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
 		C4801D532858B8D700989149 /* AgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeViewController.swift; sourceTree = "<group>"; };
 		C4801D562858C08100989149 /* InterestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestViewController.swift; sourceTree = "<group>"; };
+		C4801D59285905CA00989149 /* ExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewController.swift; sourceTree = "<group>"; };
 		C4874811284F963A00878610 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		C491C4F8284A7422002B6718 /* StartChain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StartChain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C491C4FB284A7422002B6718 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				C4801D512858B80600989149 /* NameViewController.swift */,
 				C4801D532858B8D700989149 /* AgeViewController.swift */,
 				C4801D562858C08100989149 /* InterestViewController.swift */,
+				C4801D59285905CA00989149 /* ExperienceViewController.swift */,
 			);
 			path = SettingUpProfile;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				C491C4FC284A7422002B6718 /* AppDelegate.swift in Sources */,
 				C491C4FE284A7422002B6718 /* SceneDelegate.swift in Sources */,
 				C4184C5C284BCB4F009107BD /* SignUpViewController.swift in Sources */,
+				C4801D5A285905CB00989149 /* ExperienceViewController.swift in Sources */,
 				C4184C55284BB6E2009107BD /* SignInViewController.swift in Sources */,
 				C491C533284A7AFD002B6718 /* UIView+Extension.swift in Sources */,
 				C443E5A4284E51DB00C4A35D /* SettingUpProfileForEmployerViewController.swift in Sources */,

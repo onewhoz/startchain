@@ -18,6 +18,9 @@ class AgeViewController: UIViewController {
         super.viewDidLoad()
         
         dobDatePicker.maximumDate = Date()
+        
+        let interval = Date() - dobDatePicker.date
+        ageLabel.text = "\(interval)"
 
        
     }
