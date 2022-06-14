@@ -25,7 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if(!appDelegate.hasAlreadyLaunched){
             // App is opened for the first time
             appDelegate.sethasAlreadyLaunched()
-            Coordinator.changeViewControllerWithIdentifierNoTransition("OnboardingVC")
+            Coordinator.changeViewControllerWithIdentifierNoTransition("OnboardingVC", "Main")
                     }
         else{
             // App is opened not for the first time
@@ -33,10 +33,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                         // If user is signed in
                         Account.continueWhereLeft()
                         // We have to fix this later in future bacause without this function black screen appears every time before resuming the screen.
-                        Coordinator.changeViewControllerWithIdentifierNoTransition("LaunchScreenVC")
+                        Coordinator.changeViewControllerWithIdentifierNoTransition("LaunchScreenVC", "Main")
                     }
                     else {
-                        Coordinator.changeViewControllerWithIdentifierNoTransition("LoginVC")
+                        Coordinator.changeViewControllerWithIdentifierNoTransition("LoginVC", "Main")
                         
                     }
             

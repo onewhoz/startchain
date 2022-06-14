@@ -6,21 +6,13 @@
 //
 
 import UIKit
-import FirebaseFirestore
-import FirebaseAuth
+
 class SettingUpProfileForEmployerViewController: UIViewController {
+    
+    var username : String?
 
 
-    @IBOutlet weak var companyNameTextField: UITextField!
-    @IBOutlet weak var industryTextField: UITextField!
-    
-    @IBOutlet weak var firstNameTextField: UITextField!
-    
-    @IBOutlet weak var lastNameTextField: UITextField!
-    
-    @IBOutlet weak var positionTextField: UITextField!
-    
-    var companyName, industry, firstName, lastName : String?
+    @IBOutlet weak var usernameTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,50 +24,31 @@ class SettingUpProfileForEmployerViewController: UIViewController {
   
     
     func CleanFieldData(){
-         companyName = companyNameTextField.text!
-         industry = industryTextField.text!
-         firstName = firstNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-         lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        username = usernameTextField.text!
+        username = username?.lowercased()
     }
-    func UpdateAccountInfo(){
-       
-        let data = ["company_name" : companyName,
-                    "industry": industry,
-                    "first_name" : firstName,
-                    "last_name" : lastName]
+    private func UpdateLocalAccountInfo(){
+        UserInfo.username = username
+    }
+    func UpdateAccountInfoAndMoveOn(){
+        CleanFieldData()
+        let data = ["username" : username]
         Data.setDataForUser(data){
             self.UpdateLocalAccountInfo()
+            Coordinator.pushNavBar("NameVC", "SettingUpProfile", self.navigationController.self!)
         }
         
-        
+    }
     
+   
+    
+    
+
+
+    @IBAction func nextPageBtnClicked(_ sender: Any) {
         
+        UpdateAccountInfoAndMoveOn()
         
     }
     
-    func UpdateLocalAccountInfo(){
-        
-        UserInfo.company_name = companyName
-        UserInfo.industry = industry
-        UserInfo.first_name = firstName
-        UserInfo.last_name = lastName
-        
-        
-    }
-    
-    
-    @IBAction func nextBtnClicked(_ sender: Any) {
-        
-        CleanFieldData()
-        UpdateAccountInfo()
-        Coordinator.changeViewControllerWithIdentifier("HomeEmployerTBC")
-        
-        
-
-    
-        
-        
-    }
-
-
 }

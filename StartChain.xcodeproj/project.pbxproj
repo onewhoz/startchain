@@ -21,6 +21,9 @@
 		C443E5A4284E51DB00C4A35D /* SettingUpProfileForEmployerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C443E5A3284E51DB00C4A35D /* SettingUpProfileForEmployerViewController.swift */; };
 		C443E5A6284E51F800C4A35D /* SettingUpProfileForEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C443E5A5284E51F800C4A35D /* SettingUpProfileForEmployeeViewController.swift */; };
 		C4801D502858150800989149 /* SettingUpProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4801D4F2858150800989149 /* SettingUpProfile.storyboard */; };
+		C4801D522858B80600989149 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4801D512858B80600989149 /* NameViewController.swift */; };
+		C4801D542858B8D700989149 /* AgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4801D532858B8D700989149 /* AgeViewController.swift */; };
+		C4801D572858C08100989149 /* InterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4801D562858C08100989149 /* InterestViewController.swift */; };
 		C4874812284F963A00878610 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4874811284F963A00878610 /* Data.swift */; };
 		C491C4FC284A7422002B6718 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C491C4FB284A7422002B6718 /* AppDelegate.swift */; };
 		C491C4FE284A7422002B6718 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C491C4FD284A7422002B6718 /* SceneDelegate.swift */; };
@@ -52,6 +55,9 @@
 		C443E5A3284E51DB00C4A35D /* SettingUpProfileForEmployerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingUpProfileForEmployerViewController.swift; sourceTree = "<group>"; };
 		C443E5A5284E51F800C4A35D /* SettingUpProfileForEmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingUpProfileForEmployeeViewController.swift; sourceTree = "<group>"; };
 		C4801D4F2858150800989149 /* SettingUpProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingUpProfile.storyboard; sourceTree = "<group>"; };
+		C4801D512858B80600989149 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
+		C4801D532858B8D700989149 /* AgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeViewController.swift; sourceTree = "<group>"; };
+		C4801D562858C08100989149 /* InterestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestViewController.swift; sourceTree = "<group>"; };
 		C4874811284F963A00878610 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		C491C4F8284A7422002B6718 /* StartChain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StartChain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C491C4FB284A7422002B6718 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -182,6 +188,9 @@
 				C443E5A2284E51B700C4A35D /* ForEmployer */,
 				C443E5A1284E51A600C4A35D /* ForEmployee */,
 				C4184C5A284BCB30009107BD /* Creating an Account */,
+				C4801D512858B80600989149 /* NameViewController.swift */,
+				C4801D532858B8D700989149 /* AgeViewController.swift */,
+				C4801D562858C08100989149 /* InterestViewController.swift */,
 			);
 			path = SettingUpProfile;
 			sourceTree = "<group>";
@@ -407,9 +416,11 @@
 			files = (
 				C4DD4FB5284CF5B300011DB6 /* HomeEmployeeViewController.swift in Sources */,
 				C4DD4FB3284CF5A600011DB6 /* HomeEmployerViewController.swift in Sources */,
+				C4801D542858B8D700989149 /* AgeViewController.swift in Sources */,
 				C41467E12850D85F00772E66 /* Account.swift in Sources */,
 				C4184C50284AF0C2009107BD /* LoginViewController.swift in Sources */,
 				C4F1FFD9284A7CC300CB8D1D /* OnboardingSlide.swift in Sources */,
+				C4801D572858C08100989149 /* InterestViewController.swift in Sources */,
 				C443E5A6284E51F800C4A35D /* SettingUpProfileForEmployeeViewController.swift in Sources */,
 				C4184C98284C0151009107BD /* Utilities.swift in Sources */,
 				C491C4FC284A7422002B6718 /* AppDelegate.swift in Sources */,
@@ -424,6 +435,7 @@
 				C491C530284A74F5002B6718 /* OnboardingViewController.swift in Sources */,
 				C443E59B284D16F500C4A35D /* UserInfo.swift in Sources */,
 				C4F1FFDB284A7F3100CB8D1D /* OnboardingCollectionViewCell.swift in Sources */,
+				C4801D522858B80600989149 /* NameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

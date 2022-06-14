@@ -25,11 +25,11 @@ class LoginViewController: UIViewController {
 
 
     @IBAction func signIn(_ sender: Any) {
-        Coordinator.changeViewControllerWithIdentifier("SignInVC")
+        Coordinator.changeViewControllerWithIdentifier("SignInVC", "Main")
     }
     
     @IBAction func signUp(_ sender: Any) {
-        Coordinator.changeViewControllerWithIdentifier("SignUpVC")
+        Coordinator.changeViewControllerWithIdentifier("SignUpVC", "Main")
         
         
     }

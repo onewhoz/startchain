@@ -26,12 +26,12 @@ class CreatingAnAccountViewController: UIViewController {
     
     @IBAction func findJobBtn(_ sender: Any) {
         UpdateAccountType("employee")
-        Coordinator.changeViewControllerWithIdentifier("SettingUpProfileForEmployeeVC")
+        Coordinator.changeViewControllerWithIdentifier("SettingUpProfileForEmployeeVC", "Main")
         
     }
     @IBAction func hirePplBtn(_ sender: Any) {
         UpdateAccountType("employer")
-        Coordinator.changeViewControllerWithIdentifier("SettingUpProfileForEmployerVC")
+        Coordinator.changeViewControllerWithIdentifier("SettingUpProfileForEmployerNVC", "Main")
     }
     @IBAction func signOutBtn(_ sender: Any) {
         Account.logOut()

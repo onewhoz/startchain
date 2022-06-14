@@ -16,5 +16,6 @@ struct UserInfo{
     static var first_name : String?
     static var last_name : String?
     static var occupancy : String?
+    static var username : String?
   
 }

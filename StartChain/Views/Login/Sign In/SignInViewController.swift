@@ -60,7 +60,7 @@ class SignInViewController: UIViewController {
     @IBAction func loginGoogleBtn(_ sender: Any) {
     }
     @IBAction func creatingAnAccountBtn(_ sender: Any) {
-        Coordinator.changeViewControllerWithIdentifier("SignUpVC")
+        Coordinator.changeViewControllerWithIdentifier("SignUpVC", "Main")
     }
     @IBAction func forgotPswrdBtn(_ sender: Any) {
     }

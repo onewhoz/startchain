@@ -55,24 +55,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ht-Pc-SM4">
-                                <rect key="frame" x="82" y="770" width="250" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Next">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </buttonConfiguration>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="nextBtnClicked:" destination="TZ8-XW-bmy" eventType="touchUpInside" id="6To-Xl-81r"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFl-4M-J6O">
                                 <rect key="frame" x="20" y="822" width="374" height="40"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
@@ -90,7 +72,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="d4f-oS-9Rl" kind="show" id="tZl-lC-guB"/>
+                                    <action selector="nextPageBtnClicked:" destination="TZ8-XW-bmy" eventType="touchUpInside" id="F6X-NQ-eOh"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here are some examples of cool nicknames &quot;terminator2010&quot;, &quot;coolguy2001&quot; etc." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhn-aH-XNP">
@@ -119,11 +101,14 @@
                     </view>
                     <navigationItem key="navigationItem" title="Nickname" id="3U1-m6-5dw">
                         <barButtonItem key="backBarButtonItem" title=" " id="cft-pJ-xnP"/>
-                        <pageControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" id="OMJ-kt-PP7">
+                        <pageControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" id="OMJ-kt-PP7">
                             <rect key="frame" x="132" y="9" width="150.5" height="26"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </pageControl>
                     </navigationItem>
+                    <connections>
+                        <outlet property="usernameTextField" destination="WYA-GI-xxM" id="9T9-ir-ZNo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s6I-Y0-6yU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -132,7 +117,7 @@
         <!--Name-->
         <scene sceneID="KNi-1O-sve">
             <objects>
-                <viewController id="d4f-oS-9Rl" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NameVC" id="d4f-oS-9Rl" customClass="NameViewController" customModule="StartChain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5w0-8U-D7p">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -162,11 +147,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="Ih8-Y2-SIl" kind="show" id="NZE-xm-MGs"/>
+                                    <action selector="nextPageBtnClicked:" destination="d4f-oS-9Rl" eventType="touchUpInside" id="3bD-WX-uLL"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cqD-Zh-mdm">
-                                <rect key="frame" x="20" y="140" width="374" height="45"/>
+                                <rect key="frame" x="20" y="44" width="374" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="hmI-2y-4EW"/>
                                 </constraints>
@@ -174,12 +159,12 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" textContentType="name"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vss-eG-jeb">
-                                <rect key="frame" x="20" y="205" width="374" height="45"/>
+                                <rect key="frame" x="20" y="109" width="374" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" textContentType="family-name"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We will definitely call you by your first name 😉" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5u-By-2YA">
-                                <rect key="frame" x="20" y="290" width="374" height="48"/>
+                                <rect key="frame" x="20" y="194" width="374" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -206,7 +191,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Name" id="hvO-M2-tOk">
                         <barButtonItem key="backBarButtonItem" title=" " id="Cnt-kW-N7Y"/>
-                        <pageControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" currentPage="1" id="5Z3-8k-vAx">
+                        <pageControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" currentPage="1" id="5Z3-8k-vAx">
                             <rect key="frame" x="132" y="9" width="150.5" height="26"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </pageControl>
@@ -219,7 +204,7 @@
         <!--Date of birth-->
         <scene sceneID="shq-y7-GCj">
             <objects>
-                <viewController id="Ih8-Y2-SIl" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AgeVC" id="Ih8-Y2-SIl" customClass="AgeViewController" customModule="StartChain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8U2-Fr-bM2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -250,29 +235,29 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="SN6-HE-4oz" kind="show" id="JPy-lq-SAu"/>
+                                    <action selector="nextPageBtnClicked:" destination="Ih8-Y2-SIl" eventType="touchUpInside" id="qti-OJ-lfH"/>
                                 </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="5ni-Lm-pun">
-                                <rect key="frame" x="0.0" y="160" width="414" height="300"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="Sud-U8-ncp"/>
                                 </constraints>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VI2-05-zTc">
-                                <rect key="frame" x="40" y="480" width="334" height="27.5"/>
+                                <rect key="frame" x="40" y="384" width="334" height="27.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZa-kz-5Jm">
-                                <rect key="frame" x="0.0" y="517.5" width="414" height="24"/>
+                                <rect key="frame" x="0.0" y="421.5" width="414" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This can't be changed later" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sea-sE-HAo">
-                                <rect key="frame" x="40" y="561.5" width="334" height="21"/>
+                                <rect key="frame" x="40" y="465.5" width="334" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -302,7 +287,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Date of birth" id="BYk-fN-nV2">
                         <barButtonItem key="backBarButtonItem" title=" " id="st0-HD-Ozy"/>
-                        <pageControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" currentPage="2" id="422-YA-m3U">
+                        <pageControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" currentPage="2" id="422-YA-m3U">
                             <rect key="frame" x="132" y="9" width="150.5" height="26"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </pageControl>
@@ -315,7 +300,7 @@
         <!--Interest-->
         <scene sceneID="Aa9-AN-Wf1">
             <objects>
-                <viewController id="SN6-HE-4oz" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InterestVC" id="SN6-HE-4oz" customClass="InterestViewController" customModule="StartChain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kR3-7y-coe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -325,7 +310,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="qA5-L2-0dq">
-                                <rect key="frame" x="20" y="140" width="374" height="238"/>
+                                <rect key="frame" x="20" y="44" width="374" height="238"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jsz-nd-53a">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
@@ -441,19 +426,19 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can choose both of them" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BlO-bp-TkV">
-                                <rect key="frame" x="20" y="418" width="374" height="20.5"/>
+                                <rect key="frame" x="20" y="322" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hit a little button below to get more info about interest mechanic" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGR-Wb-vO6">
-                                <rect key="frame" x="20" y="458.5" width="374" height="41"/>
+                                <rect key="frame" x="20" y="362.5" width="374" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxz-CG-svs">
-                                <rect key="frame" x="187" y="519.5" width="40" height="31"/>
+                                <rect key="frame" x="187" y="423.5" width="40" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" imagePadding="0.0">
                                     <imageReference key="image" image="info.circle" catalog="system" symbolScale="default"/>
@@ -482,7 +467,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Interest" id="iDs-ua-kfi">
                         <barButtonItem key="backBarButtonItem" title=" " id="MZR-Hs-cSR"/>
-                        <pageControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" currentPage="3" id="YuK-Fa-iP9">
+                        <pageControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" currentPage="3" id="YuK-Fa-iP9">
                             <rect key="frame" x="132" y="9" width="150.5" height="26"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </pageControl>
@@ -522,9 +507,6 @@
         <image name="info.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

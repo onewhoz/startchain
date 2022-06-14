@@ -46,7 +46,7 @@ class OnboardingViewController: UIViewController {
         if currentPage == slides.count - 1{
         
            // let controller = storyboard?.instantiateViewController(identifier: "HomeNC") as! UINavigationController
-            Coordinator.changeViewControllerWithIdentifier("LoginVC")
+            Coordinator.changeViewControllerWithIdentifier("LoginVC", "Main")
             
         } else {
             currentPage += 1

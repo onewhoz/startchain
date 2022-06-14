@@ -72,7 +72,7 @@ class SignUpViewController: UIViewController {
                 }
                 else {
                     Data.setDataForUser(["date_of_registration": "2022", "email" : email]){
-                        Coordinator.changeViewControllerWithIdentifier("CreatingAnAccountVC")
+                        Coordinator.changeViewControllerWithIdentifier("CreatingAnAccountVC", "Main")
                         
                     }
                     
@@ -104,7 +104,7 @@ class SignUpViewController: UIViewController {
     }
     @IBAction func signInBtn(_ sender: Any) {
         
-        Coordinator.changeViewControllerWithIdentifier("SignInVC")
+        Coordinator.changeViewControllerWithIdentifier("SignInVC", "Main")
         
     }
 }

@@ -21,27 +21,35 @@ class Coordinator {
             // maybe do something on completion here
         })
     }
-    static func changeViewControllerWithIdentifierNoTransition(_ identifier:String){
+    
+    private static func setStoryboard(_ storyboardIdentifier: String){
+        storyboard = UIStoryboard(name: storyboardIdentifier, bundle: nil)
         
-        if identifier == "SettingUpProfileForIndividualNC" {
-            storyboard = UIStoryboard(name: "SettingUpProfile", bundle: nil)
-            
-        }
+    }
+    
+    
+    static func changeViewControllerWithIdentifierNoTransition(_ identifier:String, _ storyboardIdentifier: String){
+        setStoryboard(storyboardIdentifier)
         let controller = storyboard.instantiateViewController(identifier: identifier)
         Coordinator.window.rootViewController = controller
      
         
     }
-    static func changeViewControllerWithIdentifier(_ identifier:String){
+    static func changeViewControllerWithIdentifier(_ identifier:String, _ storyboardIdentifier: String){
         
-        changeViewControllerWithIdentifierNoTransition(identifier)
+        changeViewControllerWithIdentifierNoTransition(identifier, storyboardIdentifier)
      
         transition()
         
     }
-//    static func changeTabBarController(_ identifier: String){
-//        let controller = storyboard.navig
-//    }
- 
+    
+    static func pushNavBar(_ identifier: String, _ storyboardIdentifier: String, _ navbar: UINavigationController){
+        setStoryboard(storyboardIdentifier)
+        let controller = storyboard.instantiateViewController(identifier: identifier)
+        navbar.pushViewController(controller, animated: true)
+        
+    }
+    
+
 
 }

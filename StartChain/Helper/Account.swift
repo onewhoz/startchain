@@ -18,33 +18,33 @@ class Account {
                     print("Error has occured")
                 }
         
-        Coordinator.changeViewControllerWithIdentifier("LoginVC")
+        Coordinator.changeViewControllerWithIdentifier("LoginVC", "Main")
     }
     
     
     static func continueWhereLeft(){
         Data.fetchUser {
             if UserInfo.account_type == nil {
-                Coordinator.changeViewControllerWithIdentifier("CreatingAnAccountVC")
+                Coordinator.changeViewControllerWithIdentifier("CreatingAnAccountVC", "Main")
             }
             
             else if UserInfo.first_name == nil{
                 if UserInfo.account_type == "employee"{
-                    Coordinator.changeViewControllerWithIdentifier("SettingUpProfileForEmployeeVC")
+                    Coordinator.changeViewControllerWithIdentifier("SettingUpProfileForEmployeeVC", "Main")
     
                 }
                 else {
-                    Coordinator.changeViewControllerWithIdentifier("SettingUpProfileForIndividualNC")
+                    Coordinator.changeViewControllerWithIdentifier("SettingUpProfileForIndividualNC", "SettingUpProfile")
                 }
             }
             else{
                 if UserInfo.account_type == "employee"{
-                    Coordinator.changeViewControllerWithIdentifier("HomeEmployeeVC")
+                    Coordinator.changeViewControllerWithIdentifier("HomeEmployeeVC", "Main")
     
                 }
                 else {
 //                    Coordinator.changeViewControllerWithIdentifier("HomeEmployerVC")
-                    Coordinator.changeViewControllerWithIdentifier("HomeEmployerTBC")
+                    Coordinator.changeViewControllerWithIdentifier("HomeEmployerTBC", "Main")
                 }
             }
        
