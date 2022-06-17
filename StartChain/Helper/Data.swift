@@ -23,7 +23,7 @@ class Data {
         Firestore.firestore().collection("users").document(userID!).getDocument { snapshot, error in
             if let error = error {
                 print(error.localizedDescription)
-                return
+                return // TEST
             }
 //            guard let data = snapshot?.data() else {
 //                print(snapshot?.data().debugDescription.localizedLowercase)
