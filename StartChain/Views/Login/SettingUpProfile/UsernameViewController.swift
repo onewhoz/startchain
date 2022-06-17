@@ -1,5 +1,5 @@
 //
-//  SettingUpProfileForEmployerViewController.swift
+//  UsernameViewController.swift
 //  Hinger for jobs
 //
 //  Created by Max Dovhopolyi on 6/6/22.
@@ -7,12 +7,13 @@
 
 import UIKit
 
-class SettingUpProfileForEmployerViewController: UIViewController {
+class UsernameViewController: UIViewController {
     
     var username : String?
 
 
     @IBOutlet weak var usernameTextField: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,13 +43,11 @@ class SettingUpProfileForEmployerViewController: UIViewController {
     
    
     
+    @IBAction func nextPageBtnClicked(_ sender: Any) {
+        UpdateAccountInfoAndMoveOn()
+    }
     
 
-
-    @IBAction func nextPageBtnClicked(_ sender: Any) {
-        
-        UpdateAccountInfoAndMoveOn()
-        
-    }
+   
     
 }

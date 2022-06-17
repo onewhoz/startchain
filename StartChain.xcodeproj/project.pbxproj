@@ -18,13 +18,15 @@
 		C4184C5C284BCB4F009107BD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4184C5B284BCB4F009107BD /* SignUpViewController.swift */; };
 		C4184C98284C0151009107BD /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4184C97284C0150009107BD /* Utilities.swift */; };
 		C443E59B284D16F500C4A35D /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C443E59A284D16F500C4A35D /* UserInfo.swift */; };
-		C443E5A4284E51DB00C4A35D /* SettingUpProfileForEmployerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C443E5A3284E51DB00C4A35D /* SettingUpProfileForEmployerViewController.swift */; };
+		C443E5A4284E51DB00C4A35D /* UsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C443E5A3284E51DB00C4A35D /* UsernameViewController.swift */; };
 		C443E5A6284E51F800C4A35D /* SettingUpProfileForEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C443E5A5284E51F800C4A35D /* SettingUpProfileForEmployeeViewController.swift */; };
+		C454AC8A285CD2EB00CC0055 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C454AC89285CD2EB00CC0055 /* Home.storyboard */; };
 		C4801D502858150800989149 /* SettingUpProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4801D4F2858150800989149 /* SettingUpProfile.storyboard */; };
 		C4801D522858B80600989149 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4801D512858B80600989149 /* NameViewController.swift */; };
 		C4801D542858B8D700989149 /* AgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4801D532858B8D700989149 /* AgeViewController.swift */; };
 		C4801D572858C08100989149 /* InterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4801D562858C08100989149 /* InterestViewController.swift */; };
-		C4801D5A285905CB00989149 /* ExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4801D59285905CA00989149 /* ExperienceViewController.swift */; };
+		C4801D5A285905CB00989149 /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4801D59285905CA00989149 /* SkillsViewController.swift */; };
+		C4801D5D28595C1500989149 /* TTGTags in Frameworks */ = {isa = PBXBuildFile; productRef = C4801D5C28595C1500989149 /* TTGTags */; };
 		C4874812284F963A00878610 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4874811284F963A00878610 /* Data.swift */; };
 		C491C4FC284A7422002B6718 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C491C4FB284A7422002B6718 /* AppDelegate.swift */; };
 		C491C4FE284A7422002B6718 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C491C4FD284A7422002B6718 /* SceneDelegate.swift */; };
@@ -53,13 +55,14 @@
 		C4184C5B284BCB4F009107BD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		C4184C97284C0150009107BD /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		C443E59A284D16F500C4A35D /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
-		C443E5A3284E51DB00C4A35D /* SettingUpProfileForEmployerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingUpProfileForEmployerViewController.swift; sourceTree = "<group>"; };
+		C443E5A3284E51DB00C4A35D /* UsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameViewController.swift; sourceTree = "<group>"; };
 		C443E5A5284E51F800C4A35D /* SettingUpProfileForEmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingUpProfileForEmployeeViewController.swift; sourceTree = "<group>"; };
+		C454AC89285CD2EB00CC0055 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C4801D4F2858150800989149 /* SettingUpProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingUpProfile.storyboard; sourceTree = "<group>"; };
 		C4801D512858B80600989149 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
 		C4801D532858B8D700989149 /* AgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeViewController.swift; sourceTree = "<group>"; };
 		C4801D562858C08100989149 /* InterestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestViewController.swift; sourceTree = "<group>"; };
-		C4801D59285905CA00989149 /* ExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewController.swift; sourceTree = "<group>"; };
+		C4801D59285905CA00989149 /* SkillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
 		C4874811284F963A00878610 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		C491C4F8284A7422002B6718 /* StartChain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StartChain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C491C4FB284A7422002B6718 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +85,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				307657E95CEA85189828AB55 /* Pods_StartChain.framework in Frameworks */,
+				C4801D5D28595C1500989149 /* TTGTags in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,13 +191,13 @@
 		C443E5A0284E517400C4A35D /* SettingUpProfile */ = {
 			isa = PBXGroup;
 			children = (
-				C443E5A2284E51B700C4A35D /* ForEmployer */,
 				C443E5A1284E51A600C4A35D /* ForEmployee */,
 				C4184C5A284BCB30009107BD /* Creating an Account */,
+				C443E5A3284E51DB00C4A35D /* UsernameViewController.swift */,
 				C4801D512858B80600989149 /* NameViewController.swift */,
 				C4801D532858B8D700989149 /* AgeViewController.swift */,
 				C4801D562858C08100989149 /* InterestViewController.swift */,
-				C4801D59285905CA00989149 /* ExperienceViewController.swift */,
+				C4801D59285905CA00989149 /* SkillsViewController.swift */,
 			);
 			path = SettingUpProfile;
 			sourceTree = "<group>";
@@ -206,20 +210,13 @@
 			path = ForEmployee;
 			sourceTree = "<group>";
 		};
-		C443E5A2284E51B700C4A35D /* ForEmployer */ = {
-			isa = PBXGroup;
-			children = (
-				C443E5A3284E51DB00C4A35D /* SettingUpProfileForEmployerViewController.swift */,
-			);
-			path = ForEmployer;
-			sourceTree = "<group>";
-		};
 		C4801D4E285814DE00989149 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				C491C501284A7422002B6718 /* Main.storyboard */,
 				C491C506284A7425002B6718 /* LaunchScreen.storyboard */,
 				C4801D4F2858150800989149 /* SettingUpProfile.storyboard */,
+				C454AC89285CD2EB00CC0055 /* Home.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -314,6 +311,9 @@
 			dependencies = (
 			);
 			name = StartChain;
+			packageProductDependencies = (
+				C4801D5C28595C1500989149 /* TTGTags */,
+			);
 			productName = "Hinger for jobs";
 			productReference = C491C4F8284A7422002B6718 /* StartChain.app */;
 			productType = "com.apple.product-type.application";
@@ -344,6 +344,7 @@
 			mainGroup = C491C4EF284A7422002B6718;
 			packageReferences = (
 				C4184C5F284BE1F6009107BD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				C4801D5B28595C1400989149 /* XCRemoteSwiftPackageReference "TTGTagCollectionView" */,
 			);
 			productRefGroup = C491C4F9284A7422002B6718 /* Products */;
 			projectDirPath = "";
@@ -359,6 +360,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C454AC8A285CD2EB00CC0055 /* Home.storyboard in Resources */,
 				C491C508284A7425002B6718 /* LaunchScreen.storyboard in Resources */,
 				C41467E32851482900772E66 /* Assets.xcassets in Resources */,
 				C4B1D3EA285795C800EF6F63 /* GoogleService-Info.plist in Resources */,
@@ -429,10 +431,10 @@
 				C491C4FC284A7422002B6718 /* AppDelegate.swift in Sources */,
 				C491C4FE284A7422002B6718 /* SceneDelegate.swift in Sources */,
 				C4184C5C284BCB4F009107BD /* SignUpViewController.swift in Sources */,
-				C4801D5A285905CB00989149 /* ExperienceViewController.swift in Sources */,
+				C4801D5A285905CB00989149 /* SkillsViewController.swift in Sources */,
 				C4184C55284BB6E2009107BD /* SignInViewController.swift in Sources */,
 				C491C533284A7AFD002B6718 /* UIView+Extension.swift in Sources */,
-				C443E5A4284E51DB00C4A35D /* SettingUpProfileForEmployerViewController.swift in Sources */,
+				C443E5A4284E51DB00C4A35D /* UsernameViewController.swift in Sources */,
 				C41467DF284FB5E600772E66 /* Coordinator.swift in Sources */,
 				C4184C59284BC26E009107BD /* CreatingAnAccountViewController.swift in Sources */,
 				C4874812284F963A00878610 /* Data.swift in Sources */,
@@ -685,7 +687,23 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		C4801D5B28595C1400989149 /* XCRemoteSwiftPackageReference "TTGTagCollectionView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/zekunyan/TTGTagCollectionView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C4801D5C28595C1500989149 /* TTGTags */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4801D5B28595C1400989149 /* XCRemoteSwiftPackageReference "TTGTagCollectionView" */;
+			productName = TTGTags;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C491C4F0284A7422002B6718 /* Project object */;
 }

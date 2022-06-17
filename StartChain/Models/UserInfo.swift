@@ -18,5 +18,6 @@ struct UserInfo{
     static var occupancy : String?
     static var username : String?
     static var date_of_birth: String?
+    static var skill_set : [String]?
   
 }

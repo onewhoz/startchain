@@ -31,7 +31,7 @@ class CreatingAnAccountViewController: UIViewController {
     }
     @IBAction func hirePplBtn(_ sender: Any) {
         UpdateAccountType("employer")
-        Coordinator.changeViewControllerWithIdentifier("SettingUpProfileForEmployerNVC", "Main")
+        Coordinator.changeViewControllerWithIdentifier("SettingUpProfileForIndividualNC", "SettingUpProfile")
     }
     @IBAction func signOutBtn(_ sender: Any) {
         Account.logOut()

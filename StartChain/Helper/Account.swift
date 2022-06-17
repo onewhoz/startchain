@@ -44,7 +44,7 @@ class Account {
                 }
                 else {
 //                    Coordinator.changeViewControllerWithIdentifier("HomeEmployerVC")
-                    Coordinator.changeViewControllerWithIdentifier("HomeEmployerTBC", "Main")
+                    Coordinator.changeViewControllerWithIdentifier("HomeTBC", "Home")
                 }
             }
        

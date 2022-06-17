@@ -18,6 +18,7 @@ class NameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
 
         // Do any additional setup after loading the view.
     }
@@ -34,7 +35,7 @@ class NameViewController: UIViewController {
     func UpdateAccountInfoAndMoveOn(){
         CleanFieldData()
         let data = ["first_name" : firstName, "last_name" : lastName]
-        Data.setDataForUser(data){
+        Data.setDataForUser(data as [String : Any]){
             self.UpdateLocalAccountInfo()
             Coordinator.pushNavBar("AgeVC", "SettingUpProfile", self.navigationController.self!)
         }
@@ -42,8 +43,7 @@ class NameViewController: UIViewController {
     }
     
     @IBAction func nextPageBtnClicked(_ sender: Any) {
-        //UpdateAccountInfoAndMoveOn()
-        Coordinator.pushNavBar("AgeVC", "SettingUpProfile", navigationController.self!)
+        UpdateAccountInfoAndMoveOn()
         
     }
     
