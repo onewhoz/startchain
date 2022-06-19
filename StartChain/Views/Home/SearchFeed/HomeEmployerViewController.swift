@@ -11,7 +11,7 @@ import FirebaseAuth
 class HomeEmployerViewController: UIViewController {
 
     override func viewDidLoad() {
-        
+        print(UserInfo.skill_set)
         
 //
         // Do any additional setup after loading the view.

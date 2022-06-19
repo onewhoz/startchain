@@ -9,6 +9,7 @@ import Foundation
 import FirebaseAuth
 
 class Account {
+    
     static func logOut(){
         do{
                     try FirebaseAuth.Auth.auth().signOut()
@@ -28,15 +29,11 @@ class Account {
                 Coordinator.changeViewControllerWithIdentifier("CreatingAnAccountVC", "Main")
             }
             
-            else if UserInfo.first_name == nil{
-                if UserInfo.account_type == "employee"{
-                    Coordinator.changeViewControllerWithIdentifier("SettingUpProfileForEmployeeVC", "Main")
-    
-                }
-                else {
-                    Coordinator.changeViewControllerWithIdentifier("SettingUpProfileForIndividualNC", "SettingUpProfile")
-                }
+            else if UserInfo.username == nil || UserInfo.first_name == nil || UserInfo.date_of_birth == nil || UserInfo.interest == nil || UserInfo.skill_set == nil{
+                Coordinator.changeViewControllerWithIdentifier("SettingUpProfileForIndividualNC", "SettingUpProfile")
             }
+            
+            
             else{
                 if UserInfo.account_type == "employee"{
                     Coordinator.changeViewControllerWithIdentifier("HomeEmployeeVC", "Main")

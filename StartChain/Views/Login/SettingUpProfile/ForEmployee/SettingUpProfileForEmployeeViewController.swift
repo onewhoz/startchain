@@ -35,7 +35,7 @@ class SettingUpProfileForEmployeeViewController: UIViewController {
     
     func UpdateAccountInfo(){
        
-        let data = ["occupancy" : occupancy,
+        let data = [
                     "first_name" : firstName,
                     "last_name" : lastName]
         Data.setDataForUser(data){
@@ -50,7 +50,7 @@ class SettingUpProfileForEmployeeViewController: UIViewController {
     
     func UpdateLocalAccountInfo(){
         
-        UserInfo.occupancy = occupancy
+        
         UserInfo.first_name = firstName
         UserInfo.last_name = lastName
         
