@@ -26,6 +26,7 @@
 		C443E59B284D16F500C4A35D /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C443E59A284D16F500C4A35D /* UserInfo.swift */; };
 		C443E5A4284E51DB00C4A35D /* UsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C443E5A3284E51DB00C4A35D /* UsernameViewController.swift */; };
 		C443E5A6284E51F800C4A35D /* SettingUpProfileForEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C443E5A5284E51F800C4A35D /* SettingUpProfileForEmployeeViewController.swift */; };
+		C447033E2864B3BB00935749 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C447033D2864B3BB00935749 /* Message.storyboard */; };
 		C454AC8A285CD2EB00CC0055 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C454AC89285CD2EB00CC0055 /* Home.storyboard */; };
 		C4801D502858150800989149 /* SettingUpProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4801D4F2858150800989149 /* SettingUpProfile.storyboard */; };
 		C4801D522858B80600989149 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4801D512858B80600989149 /* NameViewController.swift */; };
@@ -34,7 +35,6 @@
 		C4801D5A285905CB00989149 /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4801D59285905CA00989149 /* SkillsViewController.swift */; };
 		C4801D5D28595C1500989149 /* TTGTags in Frameworks */ = {isa = PBXBuildFile; productRef = C4801D5C28595C1500989149 /* TTGTags */; };
 		C484546C285FD25F006BA467 /* SearchFeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C484546B285FD25F006BA467 /* SearchFeed.storyboard */; };
-		C484546E285FDC96006BA467 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C484546D285FDC95006BA467 /* Message.storyboard */; };
 		C4845470285FDCA6006BA467 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C484546F285FDCA6006BA467 /* Profile.storyboard */; };
 		C4845473285FDDB3006BA467 /* TestProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4845472285FDDB3006BA467 /* TestProfileViewController.swift */; };
 		C4874812284F963A00878610 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4874811284F963A00878610 /* Data.swift */; };
@@ -78,6 +78,7 @@
 		C443E59A284D16F500C4A35D /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		C443E5A3284E51DB00C4A35D /* UsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameViewController.swift; sourceTree = "<group>"; };
 		C443E5A5284E51F800C4A35D /* SettingUpProfileForEmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingUpProfileForEmployeeViewController.swift; sourceTree = "<group>"; };
+		C447033D2864B3BB00935749 /* Message.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
 		C454AC89285CD2EB00CC0055 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C4801D4F2858150800989149 /* SettingUpProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingUpProfile.storyboard; sourceTree = "<group>"; };
 		C4801D512858B80600989149 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
@@ -85,7 +86,6 @@
 		C4801D562858C08100989149 /* InterestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestViewController.swift; sourceTree = "<group>"; };
 		C4801D59285905CA00989149 /* SkillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
 		C484546B285FD25F006BA467 /* SearchFeed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchFeed.storyboard; sourceTree = "<group>"; };
-		C484546D285FDC95006BA467 /* Message.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
 		C484546F285FDCA6006BA467 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		C4845472285FDDB3006BA467 /* TestProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProfileViewController.swift; sourceTree = "<group>"; };
 		C4874811284F963A00878610 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -266,11 +266,11 @@
 				C4801D4F2858150800989149 /* SettingUpProfile.storyboard */,
 				C454AC89285CD2EB00CC0055 /* Home.storyboard */,
 				C484546B285FD25F006BA467 /* SearchFeed.storyboard */,
-				C484546D285FDC95006BA467 /* Message.storyboard */,
 				C484546F285FDCA6006BA467 /* Profile.storyboard */,
 				C4F4B35E286242F8007A9ED5 /* SearchPreferences.storyboard */,
 				C4F4B36028624447007A9ED5 /* EditProfile.storyboard */,
 				C4F4B36228624898007A9ED5 /* Settings.storyboard */,
+				C447033D2864B3BB00935749 /* Message.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -488,13 +488,13 @@
 				C4F4B35F286242F8007A9ED5 /* SearchPreferences.storyboard in Resources */,
 				C41467E32851482900772E66 /* Assets.xcassets in Resources */,
 				C4B1D3EA285795C800EF6F63 /* GoogleService-Info.plist in Resources */,
-				C484546E285FDC96006BA467 /* Message.storyboard in Resources */,
 				C4F4B359286207EB007A9ED5 /* HeaderTableViewCell.xib in Resources */,
 				C491C503284A7422002B6718 /* Main.storyboard in Resources */,
 				C4801D502858150800989149 /* SettingUpProfile.storyboard in Resources */,
 				C484546C285FD25F006BA467 /* SearchFeed.storyboard in Resources */,
 				C40C3A392863877C0060AD49 /* ViewCollectionViewCell.xib in Resources */,
 				C41467E52851484600772E66 /* Assets.xcassets in Resources */,
+				C447033E2864B3BB00935749 /* Message.storyboard in Resources */,
 				C4F4B36328624898007A9ED5 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
