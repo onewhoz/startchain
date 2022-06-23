@@ -27,6 +27,8 @@
 		C443E5A4284E51DB00C4A35D /* UsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C443E5A3284E51DB00C4A35D /* UsernameViewController.swift */; };
 		C443E5A6284E51F800C4A35D /* SettingUpProfileForEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C443E5A5284E51F800C4A35D /* SettingUpProfileForEmployeeViewController.swift */; };
 		C447033E2864B3BB00935749 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C447033D2864B3BB00935749 /* Message.storyboard */; };
+		C447034D2864E18A00935749 /* RegularTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C447034B2864E18A00935749 /* RegularTableViewCell.swift */; };
+		C447034E2864E18A00935749 /* RegularTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C447034C2864E18A00935749 /* RegularTableViewCell.xib */; };
 		C454AC8A285CD2EB00CC0055 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C454AC89285CD2EB00CC0055 /* Home.storyboard */; };
 		C4801D502858150800989149 /* SettingUpProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4801D4F2858150800989149 /* SettingUpProfile.storyboard */; };
 		C4801D522858B80600989149 /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4801D512858B80600989149 /* NameViewController.swift */; };
@@ -79,6 +81,8 @@
 		C443E5A3284E51DB00C4A35D /* UsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameViewController.swift; sourceTree = "<group>"; };
 		C443E5A5284E51F800C4A35D /* SettingUpProfileForEmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingUpProfileForEmployeeViewController.swift; sourceTree = "<group>"; };
 		C447033D2864B3BB00935749 /* Message.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
+		C447034B2864E18A00935749 /* RegularTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularTableViewCell.swift; sourceTree = "<group>"; };
+		C447034C2864E18A00935749 /* RegularTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegularTableViewCell.xib; sourceTree = "<group>"; };
 		C454AC89285CD2EB00CC0055 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C4801D4F2858150800989149 /* SettingUpProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingUpProfile.storyboard; sourceTree = "<group>"; };
 		C4801D512858B80600989149 /* NameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
@@ -235,18 +239,20 @@
 			path = ForEmployee;
 			sourceTree = "<group>";
 		};
-		C44703382864B12D00935749 /* CustomCells */ = {
+		C44703382864B12D00935749 /* CustomTableCells */ = {
 			isa = PBXGroup;
 			children = (
-				C447033A2864B13A00935749 /* ViewCells */,
 				C44703392864B13300935749 /* EditCells */,
+				C447033A2864B13A00935749 /* ViewCells */,
 			);
-			path = CustomCells;
+			path = CustomTableCells;
 			sourceTree = "<group>";
 		};
 		C44703392864B13300935749 /* EditCells */ = {
 			isa = PBXGroup;
 			children = (
+				C447034B2864E18A00935749 /* RegularTableViewCell.swift */,
+				C447034C2864E18A00935749 /* RegularTableViewCell.xib */,
 			);
 			path = EditCells;
 			sourceTree = "<group>";
@@ -256,6 +262,34 @@
 			children = (
 			);
 			path = ViewCells;
+			sourceTree = "<group>";
+		};
+		C44703432864CB9F00935749 /* EditAndView */ = {
+			isa = PBXGroup;
+			children = (
+				C44703442864CBC700935749 /* EditCollection */,
+				C44703452864CBF300935749 /* ViewCollection */,
+				C44703382864B12D00935749 /* CustomTableCells */,
+			);
+			path = EditAndView;
+			sourceTree = "<group>";
+		};
+		C44703442864CBC700935749 /* EditCollection */ = {
+			isa = PBXGroup;
+			children = (
+				C40C3A322863876B0060AD49 /* EditCollectionViewCell.swift */,
+				C40C3A332863876B0060AD49 /* EditCollectionViewCell.xib */,
+			);
+			path = EditCollection;
+			sourceTree = "<group>";
+		};
+		C44703452864CBF300935749 /* ViewCollection */ = {
+			isa = PBXGroup;
+			children = (
+				C40C3A362863877C0060AD49 /* ViewCollectionViewCell.swift */,
+				C40C3A372863877C0060AD49 /* ViewCollectionViewCell.xib */,
+			);
+			path = ViewCollection;
 			sourceTree = "<group>";
 		};
 		C4801D4E285814DE00989149 /* Storyboards */ = {
@@ -403,11 +437,7 @@
 		C4F4B36428624E43007A9ED5 /* EditProfile */ = {
 			isa = PBXGroup;
 			children = (
-				C44703382864B12D00935749 /* CustomCells */,
-				C40C3A322863876B0060AD49 /* EditCollectionViewCell.swift */,
-				C40C3A332863876B0060AD49 /* EditCollectionViewCell.xib */,
-				C40C3A362863877C0060AD49 /* ViewCollectionViewCell.swift */,
-				C40C3A372863877C0060AD49 /* ViewCollectionViewCell.xib */,
+				C44703432864CB9F00935749 /* EditAndView */,
 				C40C3A3A286389780060AD49 /* EditCollectionViewController.swift */,
 			);
 			path = EditProfile;
@@ -493,6 +523,7 @@
 				C4801D502858150800989149 /* SettingUpProfile.storyboard in Resources */,
 				C484546C285FD25F006BA467 /* SearchFeed.storyboard in Resources */,
 				C40C3A392863877C0060AD49 /* ViewCollectionViewCell.xib in Resources */,
+				C447034E2864E18A00935749 /* RegularTableViewCell.xib in Resources */,
 				C41467E52851484600772E66 /* Assets.xcassets in Resources */,
 				C447033E2864B3BB00935749 /* Message.storyboard in Resources */,
 				C4F4B36328624898007A9ED5 /* Settings.storyboard in Resources */,
@@ -560,6 +591,7 @@
 				C491C4FC284A7422002B6718 /* AppDelegate.swift in Sources */,
 				C491C4FE284A7422002B6718 /* SceneDelegate.swift in Sources */,
 				C4184C5C284BCB4F009107BD /* SignUpViewController.swift in Sources */,
+				C447034D2864E18A00935749 /* RegularTableViewCell.swift in Sources */,
 				C4801D5A285905CB00989149 /* SkillsViewController.swift in Sources */,
 				C4184C55284BB6E2009107BD /* SignInViewController.swift in Sources */,
 				C491C533284A7AFD002B6718 /* UIView+Extension.swift in Sources */,

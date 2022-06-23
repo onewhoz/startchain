@@ -10,12 +10,6 @@ import UIKit
 private let reuseIdentifier = "Cell"
 var arrayOfCells = [UICollectionViewCell]()
 
-
-
-
-
-
-
 class EditCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
    
@@ -34,8 +28,8 @@ class EditCollectionViewController: UICollectionViewController, UICollectionView
 
         // Register cell classes
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-        let UINibView = UINib(nibName: "ViewCollectionViewCell", bundle: nil)
         let UINibEdit = UINib(nibName: "EditCollectionViewCell", bundle: nil)
+        let UINibView = UINib(nibName: "ViewCollectionViewCell", bundle: nil)
         self.collectionView.register(UINibView, forCellWithReuseIdentifier: "View")
         self.collectionView.register(UINibEdit, forCellWithReuseIdentifier: "Edit")
         self.collectionView.isPagingEnabled = true

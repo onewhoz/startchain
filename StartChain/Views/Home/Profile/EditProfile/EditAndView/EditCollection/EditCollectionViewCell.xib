@@ -33,7 +33,7 @@
             </constraints>
             <size key="customSize" width="380" height="390"/>
             <connections>
-                <outlet property="editTableView" destination="wMJ-ly-bJ4" id="wbS-5D-EDm"/>
+                <outlet property="tableView" destination="wMJ-ly-bJ4" id="wbS-5D-EDm"/>
             </connections>
             <point key="canvasLocation" x="76.811594202898561" y="208.25892857142856"/>
         </collectionViewCell>
