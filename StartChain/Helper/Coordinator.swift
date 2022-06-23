@@ -43,13 +43,15 @@ class Coordinator {
         
     }
     
-    static func pushNavBar(_ identifier: String, _ storyboardIdentifier: String, _ navbar: UINavigationController){
+    static func pushNavBar(_ identifier: String, _ storyboardIdentifier: String, _ navbar: UINavigationController, _ anim: Bool = true){
         setStoryboard(storyboardIdentifier)
+        
         let controller = storyboard.instantiateViewController(identifier: identifier)
-        navbar.pushViewController(controller, animated: true)
-        
-        
+       
+        navbar.pushViewController(controller, animated: anim)
+    
     }
+
     
 
 

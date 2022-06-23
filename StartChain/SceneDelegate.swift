@@ -18,6 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(windowScene: windowScene)
         Coordinator.window = window
+        
        
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate

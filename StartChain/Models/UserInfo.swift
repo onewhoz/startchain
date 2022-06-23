@@ -7,17 +7,18 @@
 
 import Foundation
 
-struct UserInfo{
+struct UserInfo   {
 
     static var uid : String?
     static var account_type : String?
-    static var company_name : String?
-    static var industry : String?
     static var first_name : String?
     static var last_name : String?
-    static var occupancy : String?
     static var username : String?
     static var date_of_birth: String?
+    static var date_of_registration: String?
+    static var email : String?
     static var skill_set : [String]?
+    static var interest : String?
+    
   
 }

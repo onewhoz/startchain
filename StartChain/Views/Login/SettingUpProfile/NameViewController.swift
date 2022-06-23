@@ -34,11 +34,17 @@ class NameViewController: UIViewController {
     }
     func UpdateAccountInfoAndMoveOn(){
         CleanFieldData()
-        let data = ["first_name" : firstName, "last_name" : lastName]
-        Data.setDataForUser(data as [String : Any]){
-            self.UpdateLocalAccountInfo()
-            Coordinator.pushNavBar("AgeVC", "SettingUpProfile", self.navigationController.self!)
+        if (firstName != "" && lastName != ""){
+            let data = ["first_name" : firstName, "last_name" : lastName]
+            Data.setDataForUser(data as [String : Any]){
+                self.UpdateLocalAccountInfo()
+                Coordinator.pushNavBar("AgeVC", "SettingUpProfile", self.navigationController.self!)
+            }
         }
+        else {
+            present(Utilities.AlertHandler("Error", "You have to enter your First and Last names"), animated: true)
+        }
+        
         
     }
     

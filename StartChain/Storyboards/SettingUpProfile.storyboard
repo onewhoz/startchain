@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Profile-->
         <scene sceneID="o3u-uE-nCd">
             <objects>
-                <navigationController storyboardIdentifier="SettingUpProfileForIndividualNC" id="5c9-B1-uak" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="SettingUpProfileForIndividualNC" id="5c9-B1-uak" customClass="Profile" customModule="StartChain" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="aMK-u9-QnM">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
-                        <segue destination="TZ8-XW-bmy" kind="relationship" relationship="rootViewController" id="cJd-eC-dlR"/>
+                        <segue destination="TZ8-XW-bmy" kind="relationship" relationship="rootViewController" id="Yan-ML-l2V"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E1B-6S-7Pf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -47,7 +47,7 @@
                                     <constraint firstAttribute="height" constant="45" id="6I7-dh-yHn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" textContentType="name"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" textContentType="nickname"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Everybody has a cool username and you must have it as well 😎" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aao-VB-ySd">
                                 <rect key="frame" x="20" y="225" width="374" height="62.5"/>
@@ -101,10 +101,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Username" id="3U1-m6-5dw">
                         <barButtonItem key="backBarButtonItem" title=" " id="cft-pJ-xnP"/>
-                        <pageControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" id="OMJ-kt-PP7">
-                            <rect key="frame" x="132" y="9" width="150.5" height="26"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </pageControl>
                     </navigationItem>
                     <connections>
                         <outlet property="usernameTextField" destination="WYA-GI-xxM" id="7hw-EI-A8L"/>
@@ -190,10 +186,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Name" id="hvO-M2-tOk">
                         <barButtonItem key="backBarButtonItem" title=" " id="Cnt-kW-N7Y"/>
-                        <pageControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" currentPage="1" id="5Z3-8k-vAx">
-                            <rect key="frame" x="132" y="9" width="150.5" height="26"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </pageControl>
                     </navigationItem>
                     <connections>
                         <outlet property="firstNameTextField" destination="cqD-Zh-mdm" id="DJT-3D-hyN"/>
@@ -294,10 +286,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Date of birth" id="BYk-fN-nV2">
                         <barButtonItem key="backBarButtonItem" title=" " id="st0-HD-Ozy"/>
-                        <pageControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" currentPage="2" id="422-YA-m3U">
-                            <rect key="frame" x="132" y="9" width="150.5" height="26"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </pageControl>
                     </navigationItem>
                     <connections>
                         <outlet property="ageLabel" destination="EZa-kz-5Jm" id="Oy8-iA-7BL"/>
@@ -489,7 +477,7 @@
         <!--Title-->
         <scene sceneID="uGd-uT-47n">
             <objects>
-                <viewController storyboardIdentifier="ExperienceVC" id="gnt-H2-ObM" customClass="SkillsViewController" customModule="StartChain" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SkillsVC" id="gnt-H2-ObM" customClass="SkillsViewController" customModule="StartChain" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MCa-EY-ojk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -568,9 +556,30 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Additional information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2n-LR-gBe">
+                                <rect key="frame" x="20" y="144" width="374" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23D-rv-Jwr">
+                                <rect key="frame" x="20" y="190.5" width="374" height="162.5"/>
+                                <string key="text">There are just two types of account in this application. You can either find a person to fulfil. There are just two types of account in this application. You can either find a person to fulfil. There are just two types of account in this application. You can either find a person to fulfil. There are just two types of account in this application. You can either find a person to fulfil.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P6C-QV-Dmi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="S2n-LR-gBe" firstAttribute="top" secondItem="P6C-QV-Dmi" secondAttribute="top" constant="100" id="3SZ-Sh-vtO"/>
+                            <constraint firstItem="P6C-QV-Dmi" firstAttribute="trailing" secondItem="S2n-LR-gBe" secondAttribute="trailing" constant="20" id="Knr-hb-LDN"/>
+                            <constraint firstItem="S2n-LR-gBe" firstAttribute="leading" secondItem="P6C-QV-Dmi" secondAttribute="leading" constant="20" id="bP5-Lp-g4h"/>
+                            <constraint firstItem="23D-rv-Jwr" firstAttribute="leading" secondItem="P6C-QV-Dmi" secondAttribute="leading" constant="20" id="gR4-cW-ojt"/>
+                            <constraint firstItem="23D-rv-Jwr" firstAttribute="top" secondItem="S2n-LR-gBe" secondAttribute="bottom" constant="20" id="gU2-pC-pgb"/>
+                            <constraint firstItem="P6C-QV-Dmi" firstAttribute="trailing" secondItem="23D-rv-Jwr" secondAttribute="trailing" constant="20" id="uj0-WC-7xn"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G8Q-ZK-hKH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
