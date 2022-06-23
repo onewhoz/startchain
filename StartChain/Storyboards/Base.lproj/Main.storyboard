@@ -940,6 +940,21 @@
             </objects>
             <point key="canvasLocation" x="-1252" y="946"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="6Xq-ny-mz0">
+            <objects>
+                <viewController storyboardIdentifier="TestVC" id="IOn-En-ohM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1d1-wu-3bC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7OM-7b-8bZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lKj-bJ-Aqn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13" y="1174"/>
+        </scene>
     </scenes>
     <resources>
         <image name="background" width="540" height="360"/>

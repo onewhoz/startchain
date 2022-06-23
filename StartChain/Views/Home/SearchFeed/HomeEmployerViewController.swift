@@ -17,8 +17,9 @@ class HomeEmployerViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
    
-   
-
+    @IBAction func settingPreferences(_ sender: Any){
+        Coordinator.pushNavBar("SearchPreferencesVC", "SearchPreferences", self.navigationController.self!)
+    }
     @IBAction func logOutBtn(_ sender: Any) {
         Account.logOut()
 
